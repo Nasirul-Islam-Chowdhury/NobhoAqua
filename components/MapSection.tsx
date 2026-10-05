@@ -63,7 +63,7 @@ export function MapSection() {
             </button>
           ))}
         </div>
-        <div className="grid gap-4 lg:grid-cols-[1fr_380px]">
+        <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-[1fr_380px]">
           <div className="glass relative h-[460px] overflow-hidden rounded-2xl sm:h-[560px]">
             <OceanMap points={points} style={style} selectedId={sel?.id} onSelect={setSel} />
             <div className="glass pointer-events-none absolute bottom-3 left-3 z-[500] flex items-center gap-3 rounded-xl px-3 py-2 text-xs">

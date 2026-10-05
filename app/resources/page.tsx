@@ -82,7 +82,7 @@ export default function Resources() {
 
         <section id="datasets">
           <SectionHead eyebrow="NASA & USGS data" title="Four sources, one picture of the ocean" />
-          <div className="grid gap-5 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-2">
             {DATASETS.map((d, i) => (
               <Reveal key={d.n} delay={(i % 2) * 0.08}>
                 <article className="glass group relative h-full overflow-hidden rounded-3xl p-7 transition hover:border-accent/60 sm:p-8">

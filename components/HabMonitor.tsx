@@ -37,7 +37,7 @@ export function HabMonitor() {
             ))}
           </div>
 
-          <div className="mt-4 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
+          <div className="mt-4 grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-[1.4fr_1fr]">
             <div className="glass rounded-2xl p-5">
               <h3 className="font-display text-lg font-semibold">Temperature vs chlorophyll-a</h3>
               <p className="text-sm text-muted">Each dot is a grid point, coloured by alert level. Hover for details.</p>

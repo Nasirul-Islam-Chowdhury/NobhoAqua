@@ -29,7 +29,7 @@ export function WhereToFind() {
       <SectionHead eyebrow="Where can I get which fish?" title="From the water to the catch."
         sub="Start with the area, or tap an exact point. We rank every species by how well the satellite-observed temperature and chlorophyll-a fit its needs." />
 
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 md:grid-cols-3">
         {summaries.map((s, i) => (
           <Reveal key={s.name} delay={i * 0.08}>
             <article className="glass h-full rounded-2xl p-5">
@@ -62,7 +62,7 @@ export function WhereToFind() {
       </div>
 
       <Reveal>
-        <div id="finder" className="mt-10 grid gap-4 lg:grid-cols-[1.1fr_1fr]">
+        <div id="finder" className="mt-10 grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-[1.1fr_1fr]">
           <div className="glass relative h-[420px] overflow-hidden rounded-2xl lg:h-[620px]">
             <OceanMap points={points} selectedId={sel.id} onSelect={setSel}
               style={(p) => ({ color: p.location === sel.location ? "#22d3ee" : "#64748b", radius: 6, opacity: p.location === sel.location ? 0.8 : 0.45, label: `${p.location} · ${p.sst}°C` })} />

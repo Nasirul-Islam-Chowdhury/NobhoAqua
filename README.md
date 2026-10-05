@@ -160,6 +160,7 @@ python3 scripts/extract_points.py
 | **Joya Roy** | Fisheries Biologist & Marine Ecology Specialist — Sylhet Agricultural University |
 | **Umme Fatema Tarin** | Aquatic Environment Analyst & Eco-Modeling Specialist — Sylhet Agricultural University |
 | **Amit Das** | Graphics Designer & Vocal Art Specialist — Metropolitan University, Bangladesh |
+| **Hamia Hussain** | Lead Researcher, XR Developer & System Architect (Team Lead) — Metropolitan University, Bangladesh |
 
 ## Vision
 

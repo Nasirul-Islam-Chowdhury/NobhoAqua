@@ -57,7 +57,7 @@ export function MissionVisionAbout() {
       <section id="mission" className="bg-bg2/60 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHead eyebrow="Mission & vision" title="Why we built NobhoAqua" />
-          <div className="grid gap-5 lg:grid-cols-[1.5fr_1fr]">
+          <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-[1.5fr_1fr]">
             {mv.map((c, i) => (
               <Reveal key={c.id} delay={i * 0.1}>
                 <article id={c.id} className="glass relative h-full overflow-hidden rounded-3xl p-8 sm:p-10">
@@ -76,7 +76,7 @@ export function MissionVisionAbout() {
         <SectionHead eyebrow="About" title="NobhoAqua by Team NobhoJol"
           sub="An interactive, data-driven decision-support tool built on NASA Earth Observation datasets (MODIS-Aqua SST & Chlorophyll-a, Landsat 8/9 and the NASA POWER API) alongside localized aquatic, soil and species parameters. It helps coastal fisheries, aquaculturists and space bio-researchers adapt to changing climatic conditions, optimize resource usage, and simulate closed-loop aquaculture for long-term sustainability." />
 
-        <div className="grid gap-5 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-2">
           <Reveal><InfoCard title="The Challenge" subtitle="Field Shift: Adapting Farms with NASA Data" rows={challenge} /></Reveal>
           <Reveal delay={0.1}><InfoCard title="Target Audience" rows={audienceFacts} /></Reveal>
         </div>

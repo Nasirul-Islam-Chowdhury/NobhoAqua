@@ -62,7 +62,7 @@ export function FishExplorer() {
         <SectionHead eyebrow="Species explorer" title="Choose any fish. See everything."
           sub="Search all 200 saltwater species. Each profile shows its tolerance for oxygen, temperature, pH and chlorophyll-a — and the best places to find it in the Bay of Bengal right now." />
         <Reveal>
-          <div className="grid gap-5 lg:grid-cols-[340px_1fr]">
+          <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-[340px_1fr]">
             {/* picker */}
             <div className="glass flex flex-col rounded-2xl p-4 lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)]">
               <label htmlFor="fish-search" className="sr-only">Search fish</label>
@@ -135,7 +135,7 @@ export function FishExplorer() {
                 <RangeGauge label="Chlorophyll-a" unit="mg/m³" range={selected.chl} scale={[0, 6.5]} marker={{ value: BOB_MEAN.chl, label: "BoB" }} fmt={(n) => String(n)} />
               </div>
 
-              <div className="grid gap-4 xl:grid-cols-[1fr_1fr]">
+              <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 xl:grid-cols-[1fr_1fr]">
                 <div className="glass rounded-2xl p-5">
                   <div className="mb-4 flex items-center justify-between gap-2">
                     <h4 className="font-display text-lg font-semibold">Where to find it</h4>

@@ -33,7 +33,7 @@ export function Insights() {
       <SectionHead eyebrow="Model insights" title="What drives fish habitat?"
         sub="The Colab pipeline predicts habitat suitability (HSI, 0–1) for Hilsa, Tuna and Shrimp from four satellite variables. Here is how those variables relate." />
       <Reveal>
-        <div className="grid gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-2">
           <div className="glass rounded-2xl p-6">
             <h3 className="font-display text-lg font-semibold">HSI distribution by species</h3>
             <div className="mt-5 space-y-6">

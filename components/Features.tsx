@@ -13,7 +13,7 @@ export function Features() {
     <section id="features" className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
       <SectionHead eyebrow="Platform" title="Three tools. One decision dashboard."
         sub="Create a free demo account to open the dashboard and explore NASA-derived data for the Bay of Bengal." />
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 md:grid-cols-3">
         {F.map((f, i) => (
           <Reveal key={f.tab} delay={i * 0.08}>
             <Link href={`/dashboard#${f.tab}`} className="focus-ring glass group relative block h-full overflow-hidden rounded-3xl p-7 transition hover:-translate-y-1 hover:border-accent">
