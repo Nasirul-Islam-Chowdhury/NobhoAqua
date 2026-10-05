@@ -29,14 +29,14 @@ const CH: Chapter[] = [
   },
   {
     id: "map", title: "Chapter 2 · The Sea Seen from the Sky", scene: "satellite",
-    story: <><p>Next morning the dashboard opened on the <B>Ocean GIS Heatmap</B>. A satellite, high above, had measured the water — its warmth, and the green dust of tiny plants that fish love to eat.</p><p>Each dot on the map was a place the satellite had checked. Rahim touched the buttons above the map and the sea changed colour.</p></>,
-    steps: ["Open the <b>Ocean GIS Heatmap</b> tab.", "Choose a layer: <b>Fishing zones</b>, <b>Sea temp</b>, <b>Chlorophyll-a</b> or <b>Algal alerts</b>.", "Tap any dot. The panel on the right shows its coordinates, temperature, chlorophyll, salinity, depth and likely species.", "Scroll your mouse wheel, pinch, or use + / − to zoom; drag to move the map."],
+    story: <><p>Next morning the dashboard opened on the <B>Ocean Heatmap & Fishing Zone Map</B>. A satellite, high above, had measured the water — its warmth, and the green dust of tiny plants that fish love to eat.</p><p>Each dot on the map was a place the satellite had checked. Rahim touched the buttons above the map and the sea changed colour.</p></>,
+    steps: ["Open the <b>Ocean Heatmap & Fishing Zone Map</b> tab.", "Choose a layer: <b>Fishing zones</b>, <b>Sea temperature</b>, <b>Chlorophyll-a</b> or <b>Algal alerts</b>.", "Tap any dot. The panel on the right shows its coordinates, temperature, chlorophyll, salinity, depth and likely species.", "Scroll your mouse wheel, pinch, or use + / − to zoom; drag to move the map."],
     tip: "Cyan dots are high-density fishing zones; purple are medium. Bigger dots mean better hilsa conditions.",
   },
   {
     id: "fish", title: "Chapter 3 · Which Fish Lives Here?", scene: "net",
-    story: <><p>“But what will I actually catch?” Rahim wondered. So he opened the <B>Species HSI Predictor</B> — a library of 200 saltwater fish.</p><p>He typed “hilsa”. At once the page showed what hilsa need to be happy: how much oxygen, how warm, how salty-sweet the water should be — and where in the bay that matched best.</p></>,
-    steps: ["Open the <b>Species HSI Predictor</b> tab.", "Search by common or scientific name, or use the quick-pick chips and the <b>Group</b> filter. Arrow keys + Enter also work.", "Read the four gauges: oxygen, temperature, pH and chlorophyll-a. The <i>BoB</i> marker is the Bay of Bengal average.", "See <b>Where to find it</b>: the top 10 places with a match %. Press <b>CSV</b> to download the coordinates.", "Explore <b>Similar habitat species</b> for alternatives."],
+    story: <><p>“But what will I actually catch?” Rahim wondered. So he opened the <B>Species Habitat Suitability Predictor</B> — a library of 200 saltwater fish.</p><p>He typed “hilsa”. At once the page showed what hilsa need to be happy: how much oxygen, how warm, how salty-sweet the water should be — and where in the bay that matched best.</p></>,
+    steps: ["Open the <b>Species Habitat Suitability Predictor</b> tab.", "Search by common or scientific name, or use the quick-pick chips and the <b>Group</b> filter. Arrow keys + Enter also work.", "Read the four gauges: oxygen, temperature, pH and chlorophyll-a. The <i>BoB</i> marker is the Bay of Bengal average.", "See <b>Where to find it</b>: the top 10 places with a match percentage. Press <b>Download coordinates</b> to save them as a spreadsheet file.", "Explore <b>Similar habitat species</b> for alternatives."],
     tip: "Hilsa and tuna scores come from the machine-learning model. Other species are estimated by matching temperature and chlorophyll to their comfort ranges.",
   },
   {
@@ -55,7 +55,7 @@ const CH: Chapter[] = [
     id: "words", title: "Chapter 6 · The Sailor’s Word List", scene: "lantern",
     story: <><p>Rahim kept a small list of strange words on a scrap of paper. Here it is, for you too:</p>
       <dl className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
-        {[["SST", "Sea surface temperature, in °C."], ["Chlorophyll-a", "A measure of tiny plants (phytoplankton) in the water — fish food."], ["Salinity (PSU)", "How salty the water is."], ["DO", "Dissolved oxygen: the air fish breathe, in mg/L."], ["HSI", "Habitat Suitability Index, 0–1: how well the water suits a species."], ["PFZ", "Potential Fishing Zone: places likely to hold fish."], ["HAB", "Harmful Algal Bloom, including red tide."], ["Match %", "How closely a place fits a fish’s comfort ranges."]].map(([t, d]) => <div key={t} className="rounded-lg border border-line p-3"><dt className="font-semibold text-accent">{t}</dt><dd className="text-muted">{d}</dd></div>)}
+        {[["Sea surface temperature", "How warm the top layer of the sea is, in °C."], ["Chlorophyll-a", "A measure of tiny plants (phytoplankton) in the water — fish food."], ["Salinity", "How salty the water is."], ["Dissolved oxygen", "The air fish breathe, measured in mg/L."], ["Habitat Suitability Index", "A score from 0 to 1 for how well the water suits a species."], ["Potential Fishing Zone", "Places likely to hold fish."], ["Harmful Algal Bloom", "Too much algae, including red tide, which can steal oxygen from the water."], ["Match percentage", "How closely a place fits a fish’s comfort ranges."]].map(([t, d]) => <div key={t} className="rounded-lg border border-line p-3"><dt className="font-semibold text-accent">{t}</dt><dd className="text-muted">{d}</dd></div>)}
       </dl></>,
   },
   {

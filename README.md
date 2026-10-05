@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo-mark.png" alt="NobhoAqua logo" width="120" />
+<img src="public/logo-mark.png" alt="NobhoAqua logo" width="120" />&nbsp;&nbsp;&nbsp;<img src="public/nasa-space-apps-2026.png" alt="NASA Space Apps Challenge 2026" width="120" />
 
 # NobhoAqua
 
@@ -34,8 +34,8 @@ The core of the product is a login-protected **dashboard** with three modules:
 
 | Module | What it does |
 |---|---|
-| 🗺️ **Ocean GIS Heatmap** | Interactive Bay of Bengal map with switchable layers — *Fishing zones (PFZ)*, *Sea temperature*, *Chlorophyll-a* and *Algal alerts*. Click any of the 119 grid points for coordinates, ocean metrics and the most likely species. Mouse-wheel zoom, themed tiles. |
-| 🐟 **Species HSI Predictor** | Search **200 saltwater species** (common or scientific name, group filter, keyboard navigation). Each profile shows oxygen / temperature / pH / chlorophyll-a tolerance gauges, the best places to find it (with CSV export of coordinates) and similar-habitat species. A reverse **“Where can I get which fish?”** finder ranks fish for any chosen area or point. |
+| 🗺️ **Ocean Heatmap & Fishing Zone Map** | Interactive Bay of Bengal map with switchable layers — *Fishing zones (PFZ)*, *Sea temperature*, *Chlorophyll-a* and *Algal alerts*. Click any of the 119 grid points for coordinates, ocean metrics and the most likely species. Mouse-wheel zoom, themed tiles. |
+| 🐟 **Species Habitat Suitability Predictor** | Search **200 saltwater species** (common or scientific name, group filter, keyboard navigation). Each profile includes an interactive **3D fish** (drag to rotate; shape and colour adapt to the species) and shows oxygen / temperature / pH / chlorophyll-a tolerance gauges, the best places to find it (with CSV export of coordinates) and similar-habitat species. A reverse **“Where can I get which fish?”** finder ranks fish for any chosen area or point. |
 | 🦐 **Aquaculture & Algal Bloom Monitor** | Counts of critical / moderate / normal bloom alerts, a temperature-vs-chlorophyll scatter, per-area risk bars and farm advice, plus model insights (HSI distributions and a parameter correlation matrix). |
 
 Around the dashboard the site also includes:
@@ -70,6 +70,7 @@ flowchart LR
 - **Framework:** Next.js 16 (App Router, Turbopack), React 19, TypeScript
 - **Styling:** Tailwind CSS 4 with a theme-token system (dark / light)
 - **Maps:** Leaflet + react-leaflet (dynamic, client-only)
+- **3D:** three.js (procedural, species-aware fish models)
 - **Motion:** Framer Motion · **Icons:** lucide-react
 - **Charts:** hand-built SVG (scatter, gauges, box plots, heatmap) — no chart library
 - **Data prep:** Python scripts + Google Colab (scikit-learn, pandas, Plotly)

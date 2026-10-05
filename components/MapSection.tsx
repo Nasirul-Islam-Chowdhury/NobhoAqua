@@ -3,6 +3,7 @@ import { MapPin } from "lucide-react";
 import { useMemo, useState } from "react";
 import { fmtCoord, points, rankSpeciesAt, verdict } from "@/lib/data";
 import type { OceanPoint } from "@/lib/types";
+import { MapLegend } from "./MapLegend";
 import { OceanMap } from "./MapClient";
 import { SectionHead, Reveal } from "./Reveal";
 import { Badge, Bar, Stat, habLabel, habTone, scoreColor } from "./ui";
@@ -10,7 +11,7 @@ import { Badge, Bar, Stat, habLabel, habTone, scoreColor } from "./ui";
 type Layer = "pfz" | "sst" | "chl" | "hab";
 const LAYERS: { id: Layer; label: string }[] = [
   { id: "pfz", label: "Fishing zones" },
-  { id: "sst", label: "Sea temp" },
+  { id: "sst", label: "Sea temperature" },
   { id: "chl", label: "Chlorophyll-a" },
   { id: "hab", label: "Algal alerts" },
 ];
@@ -34,25 +35,25 @@ export function MapSection() {
 
   const style = (p: OceanPoint) => {
     switch (layer) {
-      case "sst": return { color: ramp(SST_STOPS, (p.sst - sstMin) / (sstMax - sstMin)), label: `${p.sst}°C` };
-      case "chl": return { color: ramp(CHL_STOPS.slice(0, 3), (p.chl - chlMin) / (chlMax - chlMin)), label: `${p.chl} mg/m³` };
+      case "sst": return { color: ramp(SST_STOPS, (p.sst - sstMin) / (sstMax - sstMin)), label: `${p.sst}°C sea temperature` };
+      case "chl": return { color: ramp(CHL_STOPS.slice(0, 3), (p.chl - chlMin) / (chlMax - chlMin)), label: `${p.chl} mg/m³ chlorophyll-a` };
       case "hab": return { color: p.hab.startsWith("CRITICAL") ? "#f87171" : p.hab.startsWith("Moderate") ? "#fbbf24" : "#34d399", label: habLabel(p.hab) };
-      default: return { color: p.pfz === "High Density" ? "#22d3ee" : "#a78bfa", radius: 5 + p.hsiHilsa * 5, label: p.pfz };
+      default: return { color: p.pfz === "High Density" ? "#22d3ee" : "#a78bfa", radius: 5 + p.hsiHilsa * 5, label: `${p.pfz} fishing zone · tap for details` };
     }
   };
 
   const top = useMemo(() => (sel ? rankSpeciesAt(sel).slice(0, 6) : []), [sel]);
 
-  const legend: Record<Layer, { c: string; l: string }[]> = {
-    pfz: [{ c: "#22d3ee", l: "High-density zone" }, { c: "#a78bfa", l: "Medium zone" }],
-    sst: [{ c: ramp(SST_STOPS, 0), l: `${sstMin.toFixed(1)}°C` }, { c: ramp(SST_STOPS, 0.5), l: "" }, { c: ramp(SST_STOPS, 1), l: `${sstMax.toFixed(1)}°C` }],
-    chl: [{ c: ramp(CHL_STOPS.slice(0, 3), 0), l: `${chlMin.toFixed(1)} mg/m³` }, { c: ramp(CHL_STOPS.slice(0, 3), 0.5), l: "" }, { c: ramp(CHL_STOPS.slice(0, 3), 1), l: `${chlMax.toFixed(1)} mg/m³` }],
-    hab: [{ c: "#f87171", l: "Critical" }, { c: "#fbbf24", l: "Moderate" }, { c: "#34d399", l: "Normal" }],
+  const legends: Record<Layer, React.ComponentProps<typeof MapLegend>> = {
+    pfz: { title: "Fishing zones", items: [{ color: "#22d3ee", label: "High-density zone", hint: "Best chance of finding fish" }, { color: "#a78bfa", label: "Medium zone", hint: "Moderate chance" }], note: "Bigger dot = better hilsa conditions" },
+    sst: { title: "Sea temperature", scale: { colors: SST_STOPS.map((c) => `rgb(${c.join(",")})`), low: `${sstMin.toFixed(1)}°C cooler`, high: `warmer ${sstMax.toFixed(1)}°C` }, note: "Fish gather where warm and cool water meet" },
+    chl: { title: "Chlorophyll-a (fish food)", scale: { colors: CHL_STOPS.slice(0, 3).map((c) => `rgb(${c.join(",")})`), low: `${chlMin.toFixed(1)} less`, high: `more ${chlMax.toFixed(1)} mg/m³` }, note: "More chlorophyll-a = more plankton for fish to eat" },
+    hab: { title: "Algal bloom alerts", items: [{ color: "#f87171", label: "Critical red tide", hint: "Pause feeding · check oxygen" }, { color: "#fbbf24", label: "Moderate warning", hint: "Watch the water closely" }, { color: "#34d399", label: "Normal health", hint: "Water looks safe" }] },
   };
 
   return (
     <section id="map" className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
-      <SectionHead eyebrow="Ocean GIS" title="Potential fishing zones, from orbit"
+      <SectionHead eyebrow="Ocean map" title="Potential fishing zones, from orbit"
         sub="119 NASA-derived grid points across the Sundarbans estuary, Meghna river mouth and Kuakata offshore. Switch layers, then tap any point to inspect it." />
       <Reveal>
         <div role="tablist" aria-label="Map layer" className="mb-4 flex flex-wrap gap-2">
@@ -66,11 +67,7 @@ export function MapSection() {
         <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-[1fr_380px]">
           <div className="glass relative h-[460px] overflow-hidden rounded-2xl sm:h-[560px]">
             <OceanMap points={points} style={style} selectedId={sel?.id} onSelect={setSel} />
-            <div className="glass pointer-events-none absolute bottom-3 left-3 z-[500] flex items-center gap-3 rounded-xl px-3 py-2 text-xs">
-              {legend[layer].map((x, i) => (
-                <span key={i} className="flex items-center gap-1.5"><span className="h-3 w-3 rounded-full" style={{ background: x.c }} />{x.l}</span>
-              ))}
-            </div>
+            <MapLegend {...legends[layer]} />
           </div>
           <aside aria-live="polite" className="glass rounded-2xl p-5">
             {sel ? (
@@ -84,9 +81,9 @@ export function MapSection() {
                   <Badge tone={sel.pfz === "High Density" ? "accent" : "default"}>{sel.pfz}</Badge>
                 </div>
                 <div className="mt-5 grid grid-cols-2 gap-4">
-                  <Stat label="Sea temp" value={sel.sst} unit="°C" />
+                  <Stat label="Sea temperature" value={sel.sst} unit="°C" />
                   <Stat label="Chlorophyll-a" value={sel.chl} unit="mg/m³" />
-                  <Stat label="Salinity" value={sel.salinity} unit="PSU" />
+                  <Stat label="Salinity" value={sel.salinity} unit="practical salinity units" />
                   <Stat label="Depth" value={sel.depth} unit="m" />
                 </div>
                 <div className="mt-4"><Badge tone={habTone(sel.hab)}>{habLabel(sel.hab)}</Badge></div>
@@ -102,7 +99,7 @@ export function MapSection() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 text-xs text-muted">Hilsa & tuna scores come from the ML model; others from temperature + chlorophyll-a range fit.</p>
+                <p className="mt-4 text-xs text-muted">Hilsa & tuna scores come from the machine-learning model; others from temperature + chlorophyll-a range fit.</p>
               </>
             ) : <p className="text-muted">Select a point on the map.</p>}
           </aside>

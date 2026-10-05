@@ -3,6 +3,7 @@ import { ArrowUpRight, MousePointerClick } from "lucide-react";
 import { useMemo, useState } from "react";
 import { fmtCoord, groups, locationSummary, locations, points, rankSpeciesAt, verdict } from "@/lib/data";
 import type { OceanPoint } from "@/lib/types";
+import { MapLegend } from "./MapLegend";
 import { OceanMap } from "./MapClient";
 import { Reveal, SectionHead } from "./Reveal";
 import { Badge, Bar, scoreColor } from "./ui";
@@ -65,8 +66,9 @@ export function WhereToFind() {
         <div id="finder" className="mt-10 grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-[1.1fr_1fr]">
           <div className="glass relative h-[420px] overflow-hidden rounded-2xl lg:h-[620px]">
             <OceanMap points={points} selectedId={sel.id} onSelect={setSel}
-              style={(p) => ({ color: p.location === sel.location ? "#22d3ee" : "#64748b", radius: 6, opacity: p.location === sel.location ? 0.8 : 0.45, label: `${p.location} · ${p.sst}°C` })} />
-            <div className="glass pointer-events-none absolute left-3 top-3 z-[500] flex items-center gap-2 rounded-xl px-3 py-2 text-xs"><MousePointerClick size={14} />Tap a point to rank fish</div>
+              style={(p) => ({ color: p.location === sel.location ? "#22d3ee" : "#64748b", radius: 6, opacity: p.location === sel.location ? 0.8 : 0.45, label: `${p.location} · ${p.sst}°C · tap to rank fish` })} />
+            <MapLegend title="Choose a spot" items={[{ color: "#22d3ee", label: "Same area as selected", hint: sel.location }, { color: "#64748b", label: "Other areas", hint: "Tap any dot to compare" }]} />
+            <div className="pointer-events-none absolute right-3 top-3 z-[500] flex items-center gap-2 rounded-xl border border-accent/50 bg-solid/95 px-3.5 py-2 text-sm font-bold shadow-lg"><MousePointerClick size={16} className="text-accent" />Tap a point to rank fish</div>
           </div>
           <div className="glass rounded-2xl p-5 sm:p-6">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -91,7 +93,7 @@ export function WhereToFind() {
                 <li key={r.species.id}>
                   <div className="flex items-baseline justify-between gap-2 text-sm">
                     <span className="min-w-0 truncate font-medium">{r.species.name} <span className="text-xs font-normal italic text-muted">{r.species.scientific}</span></span>
-                    <span className={`shrink-0 tabular-nums ${verdict(r.score).cls}`}>{Math.round(r.score * 100)}% {r.source === "model" && "· ML"}</span>
+                    <span className={`shrink-0 tabular-nums ${verdict(r.score).cls}`}>{Math.round(r.score * 100)}% {r.source === "model" && "· Machine Learning"}</span>
                   </div>
                   <div className="mt-1"><Bar value={r.score} color={scoreColor(r.score)} /></div>
                 </li>

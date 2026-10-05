@@ -84,7 +84,8 @@ body {
 .leaflet-control-zoom a { background: var(--card-solid) !important; color: var(--fg) !important; border-color: var(--line) !important; }
 .leaflet-control-attribution { background: color-mix(in srgb, var(--bg) 70%, transparent) !important; color: var(--muted) !important; }
 .leaflet-control-attribution a { color: var(--accent) !important; }
-.leaflet-tooltip { background: var(--card-solid); color: var(--fg); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+.leaflet-tooltip { background: var(--card-solid); color: var(--fg); border: 1px solid var(--accent); border-radius: 10px; padding: 6px 10px; font-size: 13px; font-weight: 700; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+.leaflet-tooltip-top:before { border-top-color: var(--accent); }
 
 @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @keyframes rise { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: .55; } 100% { transform: translateY(-110vh) scale(1); opacity: 0; } }
@@ -128,5 +129,13 @@ body {
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 .orb { animation: floaty 6s ease-in-out infinite; }
 
-.dash section[id] { padding-top: 2rem; padding-bottom: 2rem; }
+.dash section[id] { padding-top: 1.25rem; padding-bottom: 1.25rem; }
 .dash section#explorer, .dash section#hab { background: transparent; }
+.dash main > section:first-of-type .sec-head { display: none; }
+
+@keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(34,211,238,.6); } 100% { box-shadow: 0 0 0 14px rgba(34,211,238,0); } }
+.pulse-ring { animation: ring 2s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .pulse-ring { animation: none; } }
+
+.nasa-logo { filter: brightness(0) invert(1); }
+[data-theme="light"] .nasa-logo { filter: none; }

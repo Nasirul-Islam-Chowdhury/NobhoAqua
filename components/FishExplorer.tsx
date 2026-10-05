@@ -3,12 +3,14 @@ import { Download, Search, Thermometer } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BOB_MEAN, fmtCoord, groups, isModelled, mean, points, rankPointsFor, species, verdict } from "@/lib/data";
 import type { Species } from "@/lib/types";
+import { Fish3D } from "./Fish3DClient";
+import { MapLegend } from "./MapLegend";
 import { OceanMap } from "./MapClient";
 import { RangeGauge } from "./RangeGauge";
 import { Reveal, SectionHead } from "./Reveal";
 import { Badge, Bar, scoreColor } from "./ui";
 
-const QUICK = ["hilsa-tenualosa-ilisha", "yellowfin-tuna", "barramundi-sea-bass", "milkfish", "atlantic-salmon", "great-white-shark"];
+const QUICK = ["hilsa-tenualosa-ilisha", "yellowfin-tuna", "milkfish", "great-white-shark"];
 
 export function similar(s: Species, n = 4) {
   const d = (o: Species) =>
@@ -64,7 +66,7 @@ export function FishExplorer() {
         <Reveal>
           <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-[340px_1fr]">
             {/* picker */}
-            <div className="glass flex flex-col rounded-2xl p-4 lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)]">
+            <div className="glass flex flex-col rounded-2xl p-3.5 lg:sticky lg:top-20 lg:self-start">
               <label htmlFor="fish-search" className="sr-only">Search fish</label>
               <div className="relative">
                 <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
@@ -72,19 +74,19 @@ export function FishExplorer() {
                   value={q} onChange={(e) => { setQ(e.target.value); setActive(0); }} onKeyDown={onKey} placeholder="Search by common or scientific name…"
                   className="focus-ring w-full rounded-xl border border-line bg-bg/60 py-3 pl-9 pr-3 text-sm placeholder:text-muted" />
               </div>
-              <div className="mt-3 flex flex-wrap gap-1.5">
+              <div className="mt-2.5 flex flex-wrap gap-1.5">
                 {QUICK.map((slug) => {
                   const s = species.find((x) => x.slug === slug)!;
                   return <button key={slug} onClick={() => setSelected(s)} className="focus-ring rounded-full border border-line px-2.5 py-1 text-xs text-muted transition hover:border-accent hover:text-fg">{s.name.replace(/ \(.*\)/, "")}</button>;
                 })}
               </div>
-              <label htmlFor="group" className="mt-3 text-xs text-muted">Group</label>
-              <select id="group" value={group} onChange={(e) => { setGroup(e.target.value); setActive(0); }} className="focus-ring mt-1 rounded-xl border border-line bg-solid px-3 py-2.5 text-sm">
-                <option>All</option>
+              <label htmlFor="group" className="sr-only">Fish group</label>
+              <select id="group" value={group} onChange={(e) => { setGroup(e.target.value); setActive(0); }} className="focus-ring mt-2.5 rounded-xl border border-line bg-solid px-3 py-2.5 text-sm">
+                <option value="All">All groups</option>
                 {groups.map((g) => <option key={g}>{g}</option>)}
               </select>
-              <p className="mt-3 text-xs text-muted" aria-live="polite">{filtered.length} species</p>
-              <ul id="fish-list" ref={listRef} role="listbox" aria-label="Fish species" className="scroll-thin mt-2 h-72 space-y-1 overflow-y-auto pr-1 lg:h-auto lg:min-h-0 lg:flex-1">
+              <p className="mt-2.5 text-xs text-muted" aria-live="polite">{filtered.length} species</p>
+              <ul id="fish-list" ref={listRef} role="listbox" aria-label="Fish species" className="scroll-thin mt-1.5 h-72 space-y-0.5 overflow-y-auto pr-1 lg:h-auto lg:max-h-[calc(100vh-21rem)]">
                 {filtered.map((s, i) => (
                   <li key={s.id} id={`fish-${s.slug}`} data-i={i} role="option" aria-selected={s.id === selected.id}>
                     <button onClick={() => setSelected(s)} className={`focus-ring w-full rounded-lg px-3 py-2 text-left text-sm transition ${s.id === selected.id ? "bg-accent/15 text-fg ring-1 ring-accent/50" : i === active ? "bg-line" : "hover:bg-line"}`}>
@@ -98,41 +100,49 @@ export function FishExplorer() {
             </div>
 
             {/* profile */}
-            <div className="min-w-0 space-y-5" aria-live="polite">
-              <div className="glass rounded-2xl p-6 sm:p-8">
-                <div className="flex flex-wrap items-center gap-2">
-                  <Badge tone="accent">{selected.group}</Badge>
-                  <Badge>{selected.zone}</Badge>
-                  <Badge>{selected.productivity} waters</Badge>
-                  {isModelled(selected) && <Badge tone="good">ML-modelled HSI</Badge>}
-                  <span className="ml-auto text-xs text-muted">#{selected.id} of 200</span>
-                </div>
-                <h3 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">{selected.name}</h3>
-                <p className="mt-1 text-lg italic text-muted">{selected.scientific}</p>
-                <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                  <div className="rounded-xl border border-line p-4">
-                    <div className="text-xs uppercase tracking-wider text-muted">Best Bay of Bengal match</div>
-                    <div className={`mt-1 font-display text-3xl font-bold ${v.cls}`}>{Math.round(ranked[0].score * 100)}%</div>
-                    <div className="text-sm text-muted">{v.label}</div>
+            <div className="min-w-0 space-y-4" aria-live="polite">
+              <div className="glass rounded-2xl p-4 sm:p-5">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-[minmax(0,1fr)_300px]">
+                  <div className="flex min-w-0 flex-col gap-5">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <Badge tone="accent">{selected.group}</Badge>
+                        <Badge>{selected.zone}</Badge>
+                        <Badge>{selected.productivity} waters</Badge>
+                        {isModelled(selected) && <Badge tone="good">Machine-learning model</Badge>}
+                      </div>
+                      <h3 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl">{selected.name}</h3>
+                      <p className="mt-1 text-base italic text-muted">{selected.scientific} <span className="not-italic">· #{selected.id} of 200</span></p>
+                    </div>
+                    <div className="mt-auto grid grid-cols-3 gap-2.5">
+                      <div className="rounded-xl border border-line p-3">
+                        <div className="text-[11px] uppercase tracking-wider text-muted">Best match</div>
+                        <div className={`font-display text-2xl font-bold sm:text-3xl ${v.cls}`}>{Math.round(ranked[0].score * 100)}%</div>
+                        <div className="text-xs text-muted">{v.label}</div>
+                      </div>
+                      <div className="rounded-xl border border-line p-3">
+                        <div className="text-[11px] uppercase tracking-wider text-muted">Area average</div>
+                        <div className="font-display text-2xl font-bold sm:text-3xl">{Math.round(avg * 100)}%</div>
+                        <div className="text-xs text-muted">{ranked.filter((m) => m.score >= 0.6).length}/{points.length} points ≥ 60%</div>
+                      </div>
+                      <div className="rounded-xl border border-line p-3">
+                        <div className="flex items-center gap-1 text-[11px] uppercase tracking-wider text-muted"><Thermometer size={12} />Comfort zone</div>
+                        <div className="font-display text-2xl font-bold sm:text-3xl">{selected.temp[0]}–{selected.temp[1]}°C</div>
+                        <div className="text-xs text-muted">{selected.zone}</div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="rounded-xl border border-line p-4">
-                    <div className="text-xs uppercase tracking-wider text-muted">Average across area</div>
-                    <div className="mt-1 font-display text-3xl font-bold">{Math.round(avg * 100)}%</div>
-                    <div className="text-sm text-muted">{ranked.filter((m) => m.score >= 0.6).length} of {points.length} points ≥ 60%</div>
-                  </div>
-                  <div className="rounded-xl border border-line p-4">
-                    <div className="flex items-center gap-1.5 text-xs uppercase tracking-wider text-muted"><Thermometer size={14} />Comfort zone</div>
-                    <div className="mt-1 font-display text-3xl font-bold">{selected.temp[0]}–{selected.temp[1]}°C</div>
-                    <div className="text-sm text-muted">{selected.zone} species</div>
+                  <div className="relative h-[240px] overflow-hidden rounded-2xl border border-line bg-[radial-gradient(70%_70%_at_50%_45%,rgba(34,211,238,0.22),transparent),linear-gradient(to_bottom,rgba(10,60,82,0.55),rgba(4,16,29,0.85))] md:h-auto md:min-h-[260px]">
+                    <Fish3D species={selected} />
+                    <p className="pointer-events-none absolute inset-x-0 bottom-2 text-center text-[11px] text-muted">Drag to rotate · stylised 3D illustration</p>
                   </div>
                 </div>
               </div>
-
               <div className="grid gap-4 sm:grid-cols-2">
                 <RangeGauge label="Dissolved oxygen" unit="mg/L" range={selected.do} scale={[3, 9.5]} fmt={(n) => n.toFixed(1)} />
-                <RangeGauge label="Temperature" unit="°C" range={selected.temp} scale={[-2, 34]} marker={{ value: BOB_MEAN.sst, label: "BoB" }} />
+                <RangeGauge label="Temperature" unit="°C" range={selected.temp} scale={[-2, 34]} marker={{ value: BOB_MEAN.sst, label: "Bay of Bengal" }} />
                 <RangeGauge label="pH" unit="" range={selected.ph} scale={[7.0, 8.6]} fmt={(n) => n.toFixed(1)} />
-                <RangeGauge label="Chlorophyll-a" unit="mg/m³" range={selected.chl} scale={[0, 6.5]} marker={{ value: BOB_MEAN.chl, label: "BoB" }} fmt={(n) => String(n)} />
+                <RangeGauge label="Chlorophyll-a" unit="mg/m³" range={selected.chl} scale={[0, 6.5]} marker={{ value: BOB_MEAN.chl, label: "Bay of Bengal" }} fmt={(n) => String(n)} />
               </div>
 
               <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 xl:grid-cols-[1fr_1fr]">
@@ -140,7 +150,7 @@ export function FishExplorer() {
                   <div className="mb-4 flex items-center justify-between gap-2">
                     <h4 className="font-display text-lg font-semibold">Where to find it</h4>
                     <button onClick={() => csv(selected)} className="focus-ring inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-xs transition hover:border-accent">
-                      <Download size={14} />CSV
+                      <Download size={14} />Download coordinates
                     </button>
                   </div>
                   <ol className="space-y-3">
@@ -155,11 +165,12 @@ export function FishExplorer() {
                       </li>
                     ))}
                   </ol>
-                  <p className="mt-4 text-xs text-muted">{ranked[0].source === "model" ? "Scores from the Colab Random-Forest HSI model." : "Estimated by matching this species’ temperature and chlorophyll-a tolerance to each satellite point."}</p>
+                  <p className="mt-4 text-xs text-muted">{ranked[0].source === "model" ? "Scores from the Colab Random-Forest habitat suitability model." : "Estimated by matching this species’ temperature and chlorophyll-a tolerance to each satellite point."}</p>
                 </div>
-                <div className="glass h-80 overflow-hidden rounded-2xl xl:h-auto xl:min-h-[420px]">
+                <div className="glass relative h-96 overflow-hidden rounded-2xl xl:h-auto xl:min-h-[420px]">
                   <OceanMap points={points} selectedId={top[0].point.id}
-                    style={(p) => { const s = scoreById.get(p.id) ?? 0; return { color: scoreColor(s), radius: 4 + s * 7, opacity: 0.35 + s * 0.6, label: `${Math.round(s * 100)}% · ${p.location}` }; }} />
+                    style={(p) => { const s = scoreById.get(p.id) ?? 0; return { color: scoreColor(s), radius: 4 + s * 7, opacity: 0.35 + s * 0.6, label: `${Math.round(s * 100)}% match · ${p.location}` }; }} />
+                  <MapLegend compact title={`Where ${selected.name.replace(/ \(.*\)/, "")} fits`} items={[{ color: "var(--good)", label: "Excellent", hint: "80% match or more" }, { color: "var(--accent)", label: "Good", hint: "60–79% match" }, { color: "var(--warn)", label: "Fair", hint: "35–59% match" }, { color: "var(--danger)", label: "Poor", hint: "Below 35% — unlikely" }]} />
                 </div>
               </div>
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MODEL, points } from "@/lib/data";
 import { HeroWaves } from "./HeroWaves";
+import { NasaBadge } from "./NasaBadge";
 
 function Counter({ to, decimals = 0, suffix = "" }: { to: number; decimals?: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -21,8 +22,8 @@ function Counter({ to, decimals = 0, suffix = "" }: { to: number; decimals?: num
 const stats = [
   { icon: Fish, label: "Species profiled", to: 200, d: 0, s: "" },
   { icon: Satellite, label: "Satellite grid points", to: points.length, d: 0, s: "" },
-  { icon: ShieldAlert, label: "HAB warning accuracy", to: MODEL.habAccuracy, d: 2, s: "%" },
-  { icon: Radar, label: "HSI model error (MSE)", to: MODEL.hsiMse, d: 4, s: "" },
+  { icon: ShieldAlert, label: "Algal bloom warning accuracy", to: MODEL.habAccuracy, d: 2, s: "%" },
+  { icon: Radar, label: "Habitat model error (mean squared error)", to: MODEL.hsiMse, d: 4, s: "" },
 ];
 
 export function Hero() {
@@ -50,15 +51,13 @@ export function Hero() {
           </div>
         </div>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-4xl">
-          <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-muted">
-            <span className="h-2 w-2 rounded-full bg-good" /> NASA Space Apps · Earth Observation × Fisheries Science
-          </span>
+          <NasaBadge className="h-20 sm:h-24" />
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
             Know where the fish are.<br />
             <span className="text-grad">Before you leave the shore.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            NobhoAqua turns NASA MODIS ocean-colour and temperature data into potential fishing zones, species-level habitat
+            NobhoAqua turns NASA satellite ocean-colour and temperature data into potential fishing zones, species-level habitat
             suitability and early warnings for harmful algal blooms across the Bay of Bengal.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">

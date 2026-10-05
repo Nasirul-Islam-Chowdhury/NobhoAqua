@@ -14,7 +14,7 @@ export function RangeGauge({ label, unit, range, scale, marker, fmt = (n) => Str
   const l = pct(range[0]), w = Math.max(2.5, pct(range[1]) - l);
   const inside = marker && marker.value >= range[0] && marker.value <= range[1];
   return (
-    <div className="glass rounded-2xl p-5">
+    <div className="glass rounded-2xl p-4">
       <div className="flex items-baseline justify-between">
         <span className="text-sm text-muted">{label}</span>
         <span className="font-display text-lg font-semibold tabular-nums">
@@ -30,6 +30,7 @@ export function RangeGauge({ label, unit, range, scale, marker, fmt = (n) => Str
         )}
       </div>
       <div className="mt-2 flex justify-between text-[10px] text-muted tabular-nums"><span>{scale[0]}</span><span>{scale[1]}</span></div>
+      {!marker && <p className="mt-2 text-xs text-muted">Comfortable range for this species</p>}
       {marker && (
         <p className={`mt-2 text-xs ${inside ? "text-good" : "text-warn"}`}>
           Bay of Bengal avg {fmt(+marker.value.toFixed(2))} {unit} — {inside ? "inside tolerance" : "outside tolerance"}

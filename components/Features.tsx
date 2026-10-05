@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Reveal, SectionHead } from "./Reveal";
 
 const F = [
-  { icon: MapIcon, tag: "Module 1", title: "Ocean GIS Heatmap & Fishing Zones", body: "Switch between sea-temperature, chlorophyll-a, fishing-zone and algal-alert layers. Click any point for coordinates, ocean metrics and likely species.", tab: "gis" },
-  { icon: Fish, tag: "Module 2", title: "Species HSI Predictor", body: "Choose any of 200 saltwater species to see its oxygen, temperature, pH and chlorophyll tolerance, plus the best places to find it and a CSV of coordinates.", tab: "hsi" },
+  { icon: MapIcon, tag: "Module 1", title: "Ocean Heatmap & Fishing Zones", body: "Switch between sea-temperature, chlorophyll-a, fishing-zone and algal-alert layers. Click any point for coordinates, ocean metrics and likely species.", tab: "gis" },
+  { icon: Fish, tag: "Module 2", title: "Species Habitat Suitability Predictor", body: "Choose any of 200 saltwater species to see its oxygen, temperature, pH and chlorophyll tolerance, plus the best places to find it and a downloadable spreadsheet of coordinates.", tab: "hsi" },
   { icon: Waves, tag: "Module 3", title: "Aquaculture & Algal Bloom Monitor", body: "A Random-Forest early-warning model flags critical red-tide risk 24–48 hours ahead, with area-by-area water health for farms.", tab: "farm" },
 ];
 

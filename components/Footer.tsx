@@ -1,10 +1,11 @@
 import { ArrowRight, ArrowUpRight, Database, Fish, ShieldAlert, Waves } from "lucide-react";
 import Link from "next/link";
 import { MODEL, points } from "@/lib/data";
+import { NasaBadge } from "./NasaBadge";
 
 const PLATFORM = [
-  ["Ocean GIS Heatmap", "/dashboard#gis"],
-  ["Species HSI Predictor", "/dashboard#hsi"],
+  ["Ocean Heatmap & Fishing Zone Map", "/dashboard#gis"],
+  ["Species Habitat Suitability Predictor", "/dashboard#hsi"],
   ["Algal Bloom Monitor", "/dashboard#farm"],
   ["Log in", "/login"],
   ["Sign up", "/signup"],
@@ -13,23 +14,25 @@ const EXPLORE = [
   ["Mission & Vision", "/#mission"],
   ["About the project", "/#about"],
   ["User Manual (Storybook)", "/guide"],
+  ["Sustainable Development Goals", "/#sdg"],
+  ["Project timeline", "/#timeline"],
   ["Meet the team", "/#team"],
   ["Datasets & Resources", "/resources"],
 ];
 const SOURCES = [
-  ["MODIS-Aqua SST", "https://podaac.jpl.nasa.gov/dataset/MODIS_AQUA_L3_SST_THERMAL_DAILY_9KM_DAYTIME_V2019.0"],
-  ["MODIS-Aqua Chlorophyll-a", "https://www.earthdata.nasa.gov/data/tools/ocean-color-level-3-4-browser"],
+  ["Aqua Sea Surface Temperature", "https://podaac.jpl.nasa.gov/dataset/MODIS_AQUA_L3_SST_THERMAL_DAILY_9KM_DAYTIME_V2019.0"],
+  ["Aqua Chlorophyll-a", "https://www.earthdata.nasa.gov/data/tools/ocean-color-level-3-4-browser"],
   ["Landsat 8/9 · EarthExplorer", "https://earthexplorer.usgs.gov/"],
-  ["NASA GIBS", "https://gibs.earthdata.nasa.gov/"],
-  ["NASA POWER API", "https://power.larc.nasa.gov/"],
+  ["Global Imagery Browse Services", "https://gibs.earthdata.nasa.gov/"],
+  ["NASA Prediction Of Worldwide Energy Resources", "https://power.larc.nasa.gov/"],
   ["Our Google Colab", "https://colab.research.google.com/drive/1ct7vcpaB00IU3G04UcqEgMDCWnaUF4Sq?usp=sharing"],
 ];
 
 const stats = [
-  { icon: Fish, v: "200", l: "saltwater species" },
+  { icon: Fish, v: "∼200/35000", l: "saltwater species" },
   { icon: Waves, v: String(points.length), l: "satellite grid points" },
   { icon: ShieldAlert, v: `${MODEL.habAccuracy}%`, l: "bloom-alert accuracy" },
-  { icon: Database, v: "5", l: "open NASA / USGS sources" },
+  { icon: Database, v: "5", l: "open NASA & U.S. Geological Survey sources" },
 ];
 
 const head = "text-xs font-semibold uppercase tracking-[0.18em] text-accent";
@@ -73,8 +76,9 @@ export function Footer() {
               <span className="font-display text-3xl font-bold tracking-tight">Nobho<span className="text-accent">Aqua</span></span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">NASA Earth-observation intelligence for coastal fisheries, aquaculture and space bio-research. Developed by <b className="text-fg">Team NobhoJol</b> for the NASA Space Apps Challenge — <i>Field Shift: Adapting Farms with NASA Data</i>.</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {["UN SDG 14 · Life Below Water", "Bay of Bengal", "Open data"].map((t) => <span key={t} className="rounded-full border border-line px-3 py-1 text-xs text-muted">{t}</span>)}
+            <div className="mt-5 flex items-center gap-3"><NasaBadge className="h-16" /><p className="text-xs font-semibold leading-snug text-muted">Built for the<br />NASA Space Apps Challenge 2026</p></div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {["United Nations Sustainable Development Goal 14 · Life Below Water", "Bay of Bengal", "Open data"].map((t) => <span key={t} className="rounded-full border border-line px-3 py-1 text-xs text-muted">{t}</span>)}
             </div>
           </div>
           <nav aria-label="Platform"><h3 className={head}>Platform</h3><ul className="mt-4 space-y-2.5">{PLATFORM.map(([l, h]) => <li key={h}><Link href={h} className={link}>{l}</Link></li>)}</ul></nav>
@@ -87,7 +91,7 @@ export function Footer() {
         {/* bottom bar */}
         <div className="mt-14 flex flex-col gap-3 border-t border-line py-7 text-xs text-muted md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} NobhoAqua · Team NobhoJol. Built for the NASA Space Apps Challenge.</p>
-          <p className="max-w-xl md:text-right">Powered by NASA MODIS & Landsat data. Estimates support — not replace — local knowledge and fishing regulations. Demo accounts are stored only in your browser.</p>
+          <p className="max-w-xl md:text-right">Powered by NASA satellite data (Moderate Resolution Imaging Spectroradiometer on Aqua, and Landsat). Estimates support — not replace — local knowledge and fishing regulations. Demo accounts are stored only in your browser.</p>
         </div>
       </div>
     </footer>

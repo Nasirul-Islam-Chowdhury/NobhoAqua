@@ -12,8 +12,8 @@ import { useTheme } from "./useTheme";
 import { WhereToFind } from "./WhereToFind";
 
 const TABS = [
-  { id: "gis", label: "Ocean GIS Heatmap", short: "GIS Heatmap", icon: MapIcon, blurb: "NASA-derived sea temperature, chlorophyll-a and potential fishing zones." },
-  { id: "hsi", label: "Species HSI Predictor", short: "Species HSI", icon: Fish, blurb: "Pick any of 200 species to see its habitat needs and best Bay of Bengal locations." },
+  { id: "gis", label: "Ocean Heatmap & Fishing Zone Map", short: "Ocean Heatmap", icon: MapIcon, blurb: "NASA-derived sea temperature, chlorophyll-a and potential fishing zones." },
+  { id: "hsi", label: "Species Habitat Suitability Predictor", short: "Habitat Suitability", icon: Fish, blurb: "Pick any of 200 species to see its habitat needs and best Bay of Bengal locations." },
   { id: "farm", label: "Aquaculture & Algal Bloom Monitor", short: "Farm Monitor", icon: Waves, blurb: "Harmful algal bloom early warnings and water-quality status by area." },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];
@@ -75,7 +75,7 @@ export function Dashboard() {
         </nav>
       </header>
 
-      <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6">
         <p className="text-sm text-muted">Welcome back, {user.name.split(" ")[0]}</p>
         <h1 className="mt-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">{active.label}</h1>
         <p className="mt-1 text-muted">{active.blurb}</p>
@@ -86,7 +86,7 @@ export function Dashboard() {
         {tab === "hsi" && <><FishExplorer /><WhereToFind /></>}
         {tab === "farm" && <><HabMonitor /><Insights /></>}
       </main>
-      <footer className="border-t border-line py-6 text-center text-xs text-muted">Powered by NASA MODIS & Landsat data · Estimates support, not replace, local knowledge.</footer>
+      <footer className="border-t border-line py-6 text-center text-xs text-muted">Powered by NASA satellite data (Moderate Resolution Imaging Spectroradiometer on Aqua, and Landsat) · Estimates support, not replace, local knowledge.</footer>
     </div>
   );
 }

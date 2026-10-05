@@ -1,4 +1,4 @@
-import { ArrowUpRight, Database, Leaf, Satellite, Thermometer, Zap, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, Database, Download, FileText, Leaf, Satellite, Thermometer, Zap, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { Reveal, SectionHead } from "@/components/Reveal";
@@ -10,15 +10,15 @@ interface Dataset { n: string; icon: LucideIcon; title: string; unit?: string; p
 
 const DATASETS: Dataset[] = [
   {
-    n: "01", icon: Thermometer, title: "NASA MODIS-Aqua Sea Surface Temperature (SST)", unit: "°C",
+    n: "01", icon: Thermometer, title: "NASA Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua — Sea Surface Temperature", unit: "°C",
     provides: "Daily ocean-surface temperature at ~9 km resolution — the key signal for locating thermal fronts where fish gather.",
     links: [
-      { name: "NASA OceanColor Main Portal", blurb: "Gateway to NASA ocean-colour and SST data and documentation.", url: "https://www.earthdata.nasa.gov/topics/ocean/ocean-color" },
-      { name: "NASA PO.DAAC MODIS Aqua SST Dataset", blurb: "MODIS Aqua Level-3 daily 9 km daytime thermal SST (v2019.0).", url: "https://podaac.jpl.nasa.gov/dataset/MODIS_AQUA_L3_SST_THERMAL_DAILY_9KM_DAYTIME_V2019.0" },
+      { name: "NASA OceanColor Main Portal", blurb: "Gateway to NASA ocean-colour and sea surface temperature data and documentation.", url: "https://www.earthdata.nasa.gov/topics/ocean/ocean-color" },
+      { name: "NASA Physical Oceanography Distributed Active Archive Center — Aqua Sea Surface Temperature dataset", blurb: "Aqua Level-3 daily 9 km daytime thermal sea surface temperature (version 2019.0).", url: "https://podaac.jpl.nasa.gov/dataset/MODIS_AQUA_L3_SST_THERMAL_DAILY_9KM_DAYTIME_V2019.0" },
     ],
   },
   {
-    n: "02", icon: Leaf, title: "NASA MODIS-Aqua Chlorophyll-a Concentration", unit: "mg/m³",
+    n: "02", icon: Leaf, title: "NASA Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua — Chlorophyll-a Concentration", unit: "mg/m³",
     provides: "Chlorophyll-a is a proxy for phytoplankton — the base of the marine food chain and an early indicator of algal blooms.",
     links: [
       { name: "NASA OceanColor L3 Chlorophyll Data Access", blurb: "Browse and download Level-3/4 ocean-colour products.", url: "https://www.earthdata.nasa.gov/data/tools/ocean-color-level-3-4-browser" },
@@ -26,20 +26,21 @@ const DATASETS: Dataset[] = [
     ],
   },
   {
-    n: "03", icon: Satellite, title: "NASA Landsat 8/9 — OLI & Thermal Infrared Sensor (TIRS)", unit: "30 m optical · 100 m thermal",
+    n: "03", icon: Satellite, title: "NASA Landsat 8/9 — Operational Land Imager & Thermal Infrared Sensor", unit: "30 m optical · 100 m thermal",
     provides: "High-resolution optical and thermal imagery for coastlines, estuaries, ponds and aquaculture farms.",
     links: [
-      { name: "USGS / NASA EarthExplorer Portal", blurb: "Search and download Landsat scenes.", url: "https://earthexplorer.usgs.gov/" },
-      { name: "NASA GIBS Imagery Tiles Service", blurb: "Global Imagery Browse Services — ready-to-use map tiles for web maps.", url: "https://gibs.earthdata.nasa.gov/" },
+      { name: "United States Geological Survey / NASA EarthExplorer Portal", blurb: "Search and download Landsat scenes.", url: "https://earthexplorer.usgs.gov/" },
+      { name: "NASA Global Imagery Browse Services — Imagery Tiles", blurb: "Ready-to-use map tiles for web maps.", url: "https://gibs.earthdata.nasa.gov/" },
     ],
   },
   {
-    n: "04", icon: Zap, title: "NASA POWER Agroclimatology & Ocean API",
-    provides: "Solar, meteorological and agroclimatic parameters through a simple API — useful context for farm and coastal conditions.",
-    links: [{ name: "NASA POWER API Portal", blurb: "Prediction Of Worldwide Energy Resources: docs, data viewer and API.", url: "https://power.larc.nasa.gov/" }],
+    n: "04", icon: Zap, title: "NASA Prediction Of Worldwide Energy Resources (POWER) — Agroclimatology & Ocean data",
+    provides: "Solar, meteorological and agroclimatic parameters through a simple programming interface — useful context for farm and coastal conditions.",
+    links: [{ name: "NASA Prediction Of Worldwide Energy Resources (POWER) Portal", blurb: "Documentation, data viewer and programming interface.", url: "https://power.larc.nasa.gov/" }],
   },
 ];
 
+const PDF = "/data/bay-of-bengal-nasa-ocean-data.pdf";
 const COLAB = "https://colab.research.google.com/drive/1ct7vcpaB00IU3G04UcqEgMDCWnaUF4Sq?usp=sharing";
 
 function Ext({ href, children, primary = false }: { href: string; children: React.ReactNode; primary?: boolean }) {
@@ -73,15 +74,16 @@ export default function Resources() {
           <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60%_80%_at_80%_0%,var(--glow),transparent),radial-gradient(40%_60%_at_0%_100%,rgba(45,212,191,0.14),transparent)]" />
           <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-muted"><Database size={14} className="text-accent" />Datasets & Resources</span>
           <h1 className="mt-5 max-w-3xl font-display text-4xl font-bold tracking-tight sm:text-5xl">The open data behind <span className="text-grad">NobhoAqua</span></h1>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">Every dataset below is free and publicly available from NASA and USGS. Use these links to explore the sources, download the raw data, and reproduce our analysis.</p>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">Every dataset below is free and publicly available from NASA and the United States Geological Survey. Use these links to explore the sources, download the raw data, and reproduce our analysis.</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Ext href={COLAB} primary>Open our Google Colab</Ext>
             <a href="#datasets" className="focus-ring rounded-xl border border-line px-4 py-2.5 text-sm font-semibold hover:border-accent">Browse datasets</a>
+            <a href="#dataset" className="focus-ring rounded-xl border border-line px-4 py-2.5 text-sm font-semibold hover:border-accent">View our dataset (PDF)</a>
           </div>
         </div>
 
         <section id="datasets">
-          <SectionHead eyebrow="NASA & USGS data" title="Four sources, one picture of the ocean" />
+          <SectionHead eyebrow="NASA & United States Geological Survey data" title="Four sources, one picture of the ocean" />
           <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-2">
             {DATASETS.map((d, i) => (
               <Reveal key={d.n} delay={(i % 2) * 0.08}>
@@ -112,15 +114,54 @@ export default function Resources() {
           </div>
         </section>
 
+        <section id="dataset" className="mt-20">
+          <SectionHead eyebrow="Our dataset" title="Bay of Bengal ocean dataset report"
+            sub="The table behind the map and the models: one row per satellite grid point, with ocean conditions, habitat scores and algal-bloom alerts. Read it below or download the file." />
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-[1fr_340px] [&>*]:min-w-0">
+            <Reveal>
+              <div className="glass overflow-hidden rounded-3xl">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-3.5">
+                  <span className="flex items-center gap-2 text-sm font-bold"><FileText size={18} className="text-accent" />bay_of_bengal_nasa_ocean_data.pdf</span>
+                  <div className="flex gap-2">
+                    <a href={PDF} target="_blank" rel="noopener noreferrer" className="focus-ring inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-xs font-semibold hover:border-accent">Open full screen<ArrowUpRight size={14} /></a>
+                    <a href={PDF} download className="focus-ring inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-accent to-accent2 px-3 py-1.5 text-xs font-semibold text-ink"><Download size={14} />Download</a>
+                  </div>
+                </div>
+                <iframe src={`${PDF}#view=FitH`} title="Bay of Bengal ocean dataset report (PDF)" className="block h-[70vh] min-h-[420px] w-full bg-white" loading="lazy" />
+                <p className="border-t border-line px-5 py-3 text-xs text-muted">Can’t see the preview on your device? Use <b className="text-fg">Open full screen</b> or <b className="text-fg">Download</b> above.</p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <aside className="glass h-full rounded-3xl p-6">
+                <h3 className="font-display text-lg font-semibold">What’s inside</h3>
+                <dl className="mt-4 grid grid-cols-2 gap-3 text-center">
+                  {[["119", "grid points"], ["3", "areas"], ["5", "pages"], ["10", "columns"]].map(([v, l]) => (
+                    <div key={l} className="rounded-xl border border-line p-3"><dd className="font-display text-2xl font-bold">{v}</dd><dt className="text-xs text-muted">{l}</dt></div>
+                  ))}
+                </dl>
+                <h4 className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-accent">Columns</h4>
+                <ul className="mt-2 flex flex-wrap gap-1.5">
+                  {["ID", "Coordinates", "Location", "Sea Surface Temperature", "Chlorophyll-a", "Salinity", "Depth", "Habitat Suitability: Hilsa", "Habitat Suitability: Tuna", "Habitat Suitability: Shrimp", "Fishing zone class", "Algal bloom alert"].map((c) => (
+                    <li key={c} className="rounded-full border border-line px-2.5 py-0.5 text-xs text-muted">{c}</li>
+                  ))}
+                </ul>
+                <h4 className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-accent">Areas</h4>
+                <p className="mt-2 text-sm text-muted">Sundarbans Estuary · Meghna River Mouth · Kuakata Offshore</p>
+                <p className="mt-5 rounded-xl border border-warn/40 bg-warn/10 p-3 text-xs leading-relaxed text-muted">Note: the report’s heading mentions 510 observations, but the table itself lists the 119 grid points used throughout this site.</p>
+              </aside>
+            </Reveal>
+          </div>
+        </section>
+
         <section id="colab" className="mt-20">
           <Reveal>
             <div className="glass relative overflow-hidden rounded-3xl p-8 sm:p-12">
               <div aria-hidden className="absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-accent2/15 blur-3xl" />
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">Our analysis</p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight">The Google Colab notebook</h2>
-              <p className="mt-4 max-w-2xl leading-relaxed text-muted">This is the notebook we used to prepare the Bay of Bengal ocean dataset and train the models. It extracts the dataset, trains a Random-Forest model for habitat suitability (HSI) and another for algal-bloom alerts, and draws the correlation, fishing-zone, HSI and bloom charts you see in the dashboard.</p>
+              <p className="mt-4 max-w-2xl leading-relaxed text-muted">This is the notebook we used to prepare the Bay of Bengal ocean dataset and train the models. It extracts the dataset, trains a Random-Forest model for Habitat Suitability Index and another for algal-bloom alerts, and draws the correlation, fishing-zone, habitat-suitability and bloom charts you see in the dashboard.</p>
               <ul className="mt-5 grid gap-2 text-sm text-muted sm:grid-cols-2">
-                {["Reads the ocean dataset (SST, chlorophyll-a, salinity, depth)", "Random-Forest regression for HSI (MSE 0.0031)", "Random-Forest classifier for bloom alerts (79.17% accuracy)", "Interactive Plotly maps and charts"].map((t) => (
+                {["Reads the ocean dataset (sea surface temperature, chlorophyll-a, salinity, depth)", "Random-Forest regression for Habitat Suitability Index (mean squared error 0.0031)", "Random-Forest classifier for bloom alerts (79.17% accuracy)", "Interactive Plotly maps and charts"].map((t) => (
                   <li key={t} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{t}</li>
                 ))}
               </ul>

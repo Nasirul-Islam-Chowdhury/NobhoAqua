@@ -50,13 +50,13 @@ export function HabMonitor() {
                     <text key={t} x={X(t)} y={H - m.b + 18} textAnchor="middle" fontSize="11" fill="var(--muted)">{t}</text>
                   ))}
                   <text x={W / 2} y={H - 6} textAnchor="middle" fontSize="12" fill="var(--muted)">Sea surface temperature (°C)</text>
-                  <text transform={`translate(12 ${H / 2}) rotate(-90)`} textAnchor="middle" fontSize="12" fill="var(--muted)">Chl-a (mg/m³)</text>
+                  <text transform={`translate(12 ${H / 2}) rotate(-90)`} textAnchor="middle" fontSize="12" fill="var(--muted)">Chlorophyll-a (mg/m³)</text>
                   {points.map((p) => (
                     <circle key={p.id} cx={X(p.sst)} cy={Y(p.chl)} r={3 + p.depth / 12} fill={hc(p.hab)} fillOpacity={hover === p.id ? 1 : 0.55} stroke={hover === p.id ? "#fff" : "none"}
                       onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} />
                   ))}
                 </svg>
-                {hp && <div className="glass pointer-events-none absolute right-2 top-2 rounded-xl px-3 py-2 text-xs"><b>{hp.location}</b><br />{hp.sst}°C · {hp.chl} mg/m³ · {hp.salinity} PSU<br />{habLabel(hp.hab)}</div>}
+                {hp && <div className="glass pointer-events-none absolute right-2 top-2 rounded-xl px-3 py-2 text-xs"><b>{hp.location}</b><br />{hp.sst}°C · {hp.chl} mg/m³ · {hp.salinity} practical salinity units<br />{habLabel(hp.hab)}</div>}
               </div>
               <div className="mt-2 flex flex-wrap gap-4 text-xs text-muted">
                 {[["Critical", COL.crit], ["Moderate", COL.mod], ["Normal", COL.ok]].map(([l, c]) => <span key={l} className="flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full" style={{ background: c }} />{l}</span>)}

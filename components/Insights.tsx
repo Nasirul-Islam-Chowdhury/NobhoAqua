@@ -3,7 +3,7 @@ import { mean, pearson, points } from "@/lib/data";
 import { Reveal, SectionHead } from "./Reveal";
 
 const keys = [
-  ["sst", "SST"], ["chl", "Chl-a"], ["salinity", "Salinity"], ["depth", "Depth"], ["hsiHilsa", "HSI Hilsa"], ["hsiTuna", "HSI Tuna"], ["hsiShrimp", "HSI Shrimp"],
+  ["sst", "Sea temperature"], ["chl", "Chlorophyll-a"], ["salinity", "Salinity"], ["depth", "Depth"], ["hsiHilsa", "Hilsa suitability"], ["hsiTuna", "Tuna suitability"], ["hsiShrimp", "Shrimp suitability"],
 ] as const;
 
 function Box({ label, vals, color }: { label: string; vals: number[]; color: string }) {
@@ -20,7 +20,7 @@ function Box({ label, vals, color }: { label: string; vals: number[]; color: str
         <line x1={q(0.5) * W} x2={q(0.5) * W} y1="2" y2="16" stroke="var(--fg)" strokeWidth="1.2" />
         {vals.map((v, i) => <circle key={i} cx={v * W} cy={9 + ((i * 37) % 7) - 3} r="0.8" fill={color} />)}
       </svg>
-      <div className="flex justify-between text-[10px] text-muted"><span>0</span><span>HSI</span><span>1</span></div>
+      <div className="flex justify-between text-[10px] text-muted"><span>0</span><span>Suitability index</span><span>1</span></div>
     </div>
   );
 }
@@ -31,11 +31,11 @@ export function Insights() {
   return (
     <section id="insights" className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
       <SectionHead eyebrow="Model insights" title="What drives fish habitat?"
-        sub="The Colab pipeline predicts habitat suitability (HSI, 0–1) for Hilsa, Tuna and Shrimp from four satellite variables. Here is how those variables relate." />
+        sub="The Colab pipeline predicts Habitat Suitability Index (0–1) for Hilsa, Tuna and Shrimp from four satellite variables. Here is how those variables relate." />
       <Reveal>
         <div className="grid grid-cols-1 gap-4 [&>*]:min-w-0 lg:grid-cols-2">
           <div className="glass rounded-2xl p-6">
-            <h3 className="font-display text-lg font-semibold">HSI distribution by species</h3>
+            <h3 className="font-display text-lg font-semibold">Habitat Suitability Index by species</h3>
             <div className="mt-5 space-y-6">
               <Box label="Hilsa" vals={points.map((p) => p.hsiHilsa)} color="#22d3ee" />
               <Box label="Tuna" vals={points.map((p) => p.hsiTuna)} color="#a78bfa" />

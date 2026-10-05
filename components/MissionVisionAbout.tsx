@@ -1,10 +1,11 @@
 import { Compass, Cpu, Database, Eye, Satellite, Target } from "lucide-react";
+import { NasaBadge } from "./NasaBadge";
 import { Reveal, SectionHead } from "./Reveal";
 
 const mv = [
   {
     id: "mission", icon: Target, title: "Our Mission",
-    body: "Our mission at Team NobhoJol is to empower coastal fisheries and space bio-research through the NobhoAqua Portal by seamlessly transforming raw satellite data into actionable marine intelligence. By leveraging NASA MODIS-Aqua for Sea Surface Temperature (SST) and Chlorophyll-a concentrations, Landsat 8/9 for high-resolution thermal and optical coastal mapping via USGS EarthExplorer & GIBS, and the NASA POWER API for real-time agroclimatic ocean analytics, we optimize fishing zone predictions (PFZ) to reduce fuel waste on Earth, while providing data-driven modeling for closed-loop microgravity aquaculture in space.",
+    body: "Our mission at Team NobhoJol is to empower coastal fisheries and space bio-research through the NobhoAqua Portal by seamlessly transforming raw satellite data into actionable marine intelligence. By leveraging the NASA Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua for Sea Surface Temperature and Chlorophyll-a concentrations, Landsat 8/9 for high-resolution thermal and optical coastal mapping via the United States Geological Survey EarthExplorer and NASA Global Imagery Browse Services, and the NASA Prediction Of Worldwide Energy Resources service for real-time agroclimatic ocean analytics, we optimize Potential Fishing Zone predictions to reduce fuel waste on Earth, while providing data-driven modeling for closed-loop microgravity aquaculture in space.",
   },
   {
     id: "vision", icon: Eye, title: "Our Vision",
@@ -13,9 +14,9 @@ const mv = [
 ];
 
 const steps = [
-  { icon: Satellite, t: "Observe", d: "NASA MODIS-Aqua supplies sea-surface temperature and chlorophyll-a; Landsat 8/9 adds high-resolution coastal detail." },
+  { icon: Satellite, t: "Observe", d: "NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua supplies sea-surface temperature and chlorophyll-a; Landsat 8/9 adds high-resolution coastal detail." },
   { icon: Database, t: "Calibrate", d: "Species tolerance ranges for 200 fish — oxygen, temperature, pH and chlorophyll-a — anchor every prediction." },
-  { icon: Cpu, t: "Predict", d: "Random-Forest models estimate habitat suitability (HSI) and 24–48 h algal-bloom risk for every grid point." },
+  { icon: Cpu, t: "Predict", d: "Random-Forest models estimate Habitat Suitability Index and 24–48 hours algal-bloom risk for every grid point." },
   { icon: Compass, t: "Decide", d: "Maps, rankings and alerts turn predictions into practical guidance at sea and at the farm." },
 ];
 
@@ -31,14 +32,15 @@ const audienceFacts: [string, string][] = [
   ["Age Range", "15+ years — high school students, university undergraduates, researchers and industry professionals."],
   ["Who It’s For", "Traditional fishermen, commercial aquaculture farm managers, marine biologists & researchers, space life scientists and climate-resilience policy makers."],
   ["Educational Use", "Ideal for courses in Fisheries Science, Marine Biology, Oceanography, Remote Sensing, Machine Learning and Space Microgravity Biology."],
-  ["Global Appeal", "Addresses climate change adaptation, marine ecosystem preservation, lower carbon footprints in fisheries, UN SDG 14 (Life Below Water), and NASA’s Artemis & Mars exploration missions."],
+  ["Global Appeal", "Addresses climate change adaptation, marine ecosystem preservation, lower carbon footprints in fisheries, United Nations Sustainable Development Goal 14 (Life Below Water), and NASA’s Artemis & Mars exploration missions."],
 ];
 
-const sources = ["NASA MODIS-Aqua", "Landsat 8/9", "NASA POWER API", "USGS EarthExplorer", "NASA GIBS"];
+const sources = ["Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua", "Landsat 8/9", "NASA Prediction Of Worldwide Energy Resources", "United States Geological Survey EarthExplorer", "NASA Global Imagery Browse Services"];
 
-function InfoCard({ title, subtitle, rows }: { title: string; subtitle?: string; rows: [string, string][] }) {
+function InfoCard({ title, subtitle, rows, logo = false }: { title: string; subtitle?: string; rows: [string, string][]; logo?: boolean }) {
   return (
-    <article className="rounded-2xl border border-accent2/30 bg-solid/80 p-7 shadow-[0_0_50px_var(--glow)] backdrop-blur sm:p-9">
+    <article className="relative rounded-2xl border border-accent2/30 bg-solid/80 p-7 shadow-[0_0_50px_var(--glow)] backdrop-blur sm:p-9">
+      {logo && <div className="mb-4 sm:absolute sm:right-7 sm:top-7 sm:mb-0"><NasaBadge className="h-16 sm:h-20" /></div>}
       <h3 className="font-display text-3xl font-bold text-accent2">{title}</h3>
       {subtitle && <p className="mt-1 text-base font-medium text-danger">{subtitle}</p>}
       <div className="my-5 h-px bg-accent2/30" />
@@ -74,10 +76,10 @@ export function MissionVisionAbout() {
 
       <section id="about" className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <SectionHead eyebrow="About" title="NobhoAqua by Team NobhoJol"
-          sub="An interactive, data-driven decision-support tool built on NASA Earth Observation datasets (MODIS-Aqua SST & Chlorophyll-a, Landsat 8/9 and the NASA POWER API) alongside localized aquatic, soil and species parameters. It helps coastal fisheries, aquaculturists and space bio-researchers adapt to changing climatic conditions, optimize resource usage, and simulate closed-loop aquaculture for long-term sustainability." />
+          sub="An interactive, data-driven decision-support tool built on NASA Earth Observation datasets (the Moderate Resolution Imaging Spectroradiometer on Aqua for sea surface temperature & chlorophyll-a, Landsat 8/9, and NASA’s Prediction Of Worldwide Energy Resources service) alongside localized aquatic, soil and species parameters. It helps coastal fisheries, aquaculturists and space bio-researchers adapt to changing climatic conditions, optimize resource usage, and simulate closed-loop aquaculture for long-term sustainability." />
 
         <div className="grid grid-cols-1 gap-5 [&>*]:min-w-0 lg:grid-cols-2">
-          <Reveal><InfoCard title="The Challenge" subtitle="Field Shift: Adapting Farms with NASA Data" rows={challenge} /></Reveal>
+          <Reveal><InfoCard logo title="The Challenge" subtitle="Field Shift: Adapting Farms with NASA Data" rows={challenge} /></Reveal>
           <Reveal delay={0.1}><InfoCard title="Target Audience" rows={audienceFacts} /></Reveal>
         </div>
 

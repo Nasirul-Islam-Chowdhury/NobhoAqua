@@ -8,6 +8,8 @@ const links = [
   ["Platform", "#features"],
   ["Mission", "#mission"],
   ["About", "#about"],
+  ["Goals", "#sdg"],
+  ["Timeline", "#timeline"],
   ["Team", "#team"],
   ["Resources", "/resources"],
   ["User Manual", "/guide"],
