@@ -1,0 +1,200 @@
+Yellowfin Tuna;Thunnus albacares;4.5-6.5;18-31;7.8-8.2;0.2-1.5
+Atlantic Salmon;Salmo salar;6.5-9.0;8-16;7.5-8.4;0.5-2.5
+Skipjack Tuna;Katsuwonus pelamis;4.0-6.0;15-30;7.8-8.3;0.2-1.2
+Atlantic Cod;Gadus morhua;6.0-8.5;2-12;7.6-8.2;0.4-2.0
+Hilsa (Tenualosa ilisha);Tenualosa ilisha;5.0-7.5;20-30;7.5-8.3;0.8-3.5
+Indo-Pacific King Mackerel;Scomberomorus guttatus;5.0-7.0;22-29;7.8-8.3;0.5-2.0
+Mahi Mahi (Dolphinfish);Coryphaena hippurus;5.0-7.0;21-30;7.8-8.4;0.2-1.2
+Sailfish;Istiophorus platypterus;4.5-6.5;22-28;7.8-8.3;0.2-1.0
+Red Snapper;Lutjanus campechanus;5.0-7.5;16-27;7.7-8.3;0.4-1.8
+Swordfish;Xiphias gladius;4.0-6.5;5-27;7.6-8.2;0.1-1.0
+Barramundi (Sea Bass);Lates calcarifer;5.0-8.0;22-32;7.5-8.5;0.8-4.0
+Cobia;Rachycentron canadum;5.0-7.0;20-30;7.7-8.3;0.4-2.2
+Bluefin Tuna;Thunnus thynnus;5.5-8.0;10-24;7.7-8.2;0.3-1.8
+Atlantic Herring;Clupea harengus;6.0-8.5;1-18;7.6-8.3;0.5-3.0
+Pacific Halibut;Hippoglossus stenolepis;5.5-8.0;3-11;7.6-8.2;0.3-1.5
+Japanese Amberjack (Buri);Seriola quinqueradiata;5.5-7.5;15-26;7.8-8.3;0.4-2.0
+Giant Grouper;Epinephelus lanceolatus;4.5-7.0;22-30;7.6-8.3;0.5-2.5
+Wahoo;Acanthocybium solandri;5.0-6.5;21-29;7.8-8.3;0.2-1.0
+Chilean Sea Bass;Dissostichus eleginoides;6.5-9.0;-1-4;7.6-8.1;0.1-0.8
+Great Barracuda;Sphyraena barracuda;5.0-7.0;21-30;7.7-8.4;0.3-1.5
+Blue Marlin;Makaira nigricans;4.5-6.5;22-31;7.8-8.4;0.1-0.8
+Striped Marlin;Kajikia audax;4.5-6.5;18-27;7.8-8.3;0.2-1.0
+Black Marlin;Istiompax indica;4.5-6.5;20-30;7.8-8.3;0.2-1.2
+Tarpon;Megalops atlanticus;3.5-7.0;22-32;7.2-8.4;0.5-3.5
+Bonefish;Albula vulpes;4.5-7.0;20-31;7.6-8.4;0.4-2.0
+Permit;Trachinotus falcatus;5.0-7.5;21-30;7.7-8.3;0.3-1.8
+Jack Crevalle;Caranx hippos;4.5-7.0;18-30;7.6-8.3;0.5-2.5
+Giant Trevally (GT);Caranx ignobilis;5.0-7.5;22-30;7.8-8.4;0.3-1.8
+King Threadfin;Polydactylus macrochir;4.5-7.0;22-31;7.5-8.3;0.8-3.0
+Spanish Mackerel;Scomberomorus maculatus;5.0-7.0;20-29;7.7-8.3;0.5-2.2
+Narrow-barred Mackerel;Scomberomorus commerson;5.0-7.0;21-29;7.8-8.3;0.4-2.0
+Pacific Cod;Gadus macrocephalus;6.0-8.5;0-12;7.6-8.2;0.4-2.0
+Pollock;Pollachius virens;6.0-8.5;4-14;7.6-8.2;0.5-2.2
+Haddock;Melanogrammus aeglefinus;6.0-8.5;2-10;7.6-8.2;0.4-1.8
+European Seabass;Dicentrarchus labrax;5.0-8.0;8-24;7.5-8.3;0.5-2.5
+Gilthead Seabream;Sparus aurata;5.0-7.5;12-28;7.6-8.3;0.5-2.5
+Turbot;Scophthalmus maximus;5.5-8.0;8-20;7.6-8.2;0.4-2.0
+European Flounder;Platichthys flesus;5.0-8.0;5-20;7.4-8.3;0.6-3.0
+Summer Flounder (Fluke);Paralichthys dentatus;5.0-7.5;10-23;7.6-8.3;0.5-2.2
+Dover Sole;Solea solea;5.5-8.0;8-20;7.6-8.2;0.5-2.0
+Yellowtail Snapper;Ocyurus chrysurus;5.0-7.0;22-29;7.8-8.4;0.3-1.5
+Mangrove Red Snapper;Lutjanus argentimaculatus;4.5-7.5;20-32;7.4-8.4;0.8-3.5
+Mutton Snapper;Lutjanus analis;5.0-7.0;20-29;7.8-8.4;0.3-1.6
+Cubera Snapper;Lutjanus cyanopterus;4.5-7.0;21-30;7.7-8.3;0.4-1.8
+Black Sea Bass;Centropristis striata;5.0-7.5;10-24;7.6-8.3;0.5-2.2
+Goliath Grouper;Epinephelus itajara;4.0-7.0;20-30;7.5-8.4;0.5-3.0
+Red Grouper;Epinephelus morio;5.0-7.0;18-28;7.7-8.3;0.3-1.8
+Gag Grouper;Mycteroperca microlepis;5.0-7.0;16-27;7.7-8.3;0.4-1.8
+Nassau Grouper;Epinephelus striatus;5.0-7.0;22-29;7.8-8.4;0.3-1.5
+Coral Trout;Plectropomus leopardus;5.0-7.5;22-30;7.8-8.4;0.2-1.2
+Atlantic Mackerel;Scomber scombrus;6.0-8.5;7-20;7.6-8.3;0.5-2.5
+Chub Mackerel;Scomber japonicus;5.5-7.5;10-24;7.7-8.3;0.4-2.2
+Pacific Sardine;Sardinops sagax;5.0-7.5;10-22;7.6-8.3;0.6-3.5
+European Pilchard;Sardina pilchardus;5.5-8.0;10-20;7.6-8.3;0.5-3.0
+European Anchovy;Engraulis encrasicolus;5.0-7.5;12-24;7.6-8.3;0.8-4.0
+Peruvian Anchoveta;Engraulis ringens;4.5-7.5;12-20;7.6-8.2;1.0-6.0
+Gulf Menhaden;Brevoortia patronus;4.5-7.5;12-30;7.4-8.3;1.0-5.0
+Atlantic Menhaden;Brevoortia tyrannus;4.5-7.5;10-26;7.4-8.3;1.0-5.0
+White Seabass;Atractoscion nobilis;5.0-7.5;12-22;7.6-8.3;0.4-2.0
+Black Drum;Pogonias cromis;4.5-7.5;12-30;7.4-8.3;0.6-3.0
+Red Drum (Redfish);Sciaenops ocellatus;4.5-8.0;10-32;7.4-8.4;0.6-3.5
+Spotted Seatrout;Cynoscion nebulosus;4.5-7.5;12-32;7.5-8.4;0.6-3.0
+Weakfish;Cynoscion regalis;5.0-7.5;10-26;7.5-8.3;0.5-2.5
+Atlantic Croaker;Micropogonias undulatus;4.0-7.5;10-30;7.4-8.3;0.6-3.5
+California Sheephead;Bodianus pulcher;5.0-7.5;12-22;7.7-8.3;0.3-1.5
+Humphead Wrasse;Cheilinus undulatus;5.0-7.0;24-30;7.8-8.4;0.2-1.0
+Bluefish;Pomatomus saltatrix;5.0-7.5;14-27;7.6-8.3;0.4-2.0
+Amberjack (Greater);Seriola dumerili;5.0-7.0;18-28;7.7-8.3;0.3-1.5
+Florida Pompano;Trachinotus carolinus;5.0-7.5;18-30;7.6-8.3;0.5-2.5
+Lookdown;Selene vomer;4.5-7.0;18-29;7.6-8.3;0.4-2.0
+Sheepshead;Archosargus probatocephalus;4.5-7.5;10-30;7.4-8.4;0.6-3.0
+Scup (Porgy);Stenotomus chrysops;5.0-7.5;10-24;7.6-8.3;0.5-2.2
+Red Seabream;Pagrus major;5.0-7.5;14-26;7.7-8.3;0.4-2.0
+Pink Dentex;Dentex gibbosus;5.0-7.0;14-24;7.7-8.3;0.3-1.5
+Atlantic Halibut;Hippoglossus hippoglossus;6.0-8.5;1-11;7.6-8.2;0.3-1.5
+Greenland Halibut;Reinhardtius hippoglossoides;6.0-8.5;-1-5;7.6-8.1;0.2-1.0
+Petrale Sole;Eopsetta jordani;5.5-8.0;5-15;7.6-8.2;0.4-1.8
+English Sole;Parophrys vetulus;5.5-8.0;6-16;7.5-8.2;0.5-2.0
+Starry Flounder;Platichthys stellatus;5.0-8.0;2-18;7.3-8.3;0.6-3.0
+Lingcod;Ophiodon elongatus;5.5-8.0;5-15;7.6-8.2;0.4-1.8
+Sablefish (Black Cod);Anoplopoma fimbria;5.5-8.0;1-10;7.6-8.2;0.2-1.2
+Cabezon;Scorpaenichthys marmoratus;5.0-7.5;7-18;7.6-8.3;0.4-2.0
+Yellowtail Rockfish;Sebastes flavidus;5.5-8.0;6-16;7.6-8.2;0.3-1.6
+Black Rockfish;Sebastes melanops;5.5-8.0;6-16;7.6-8.3;0.4-1.8
+Bocaccio Rockfish;Sebastes paucispinis;5.0-8.0;6-15;7.6-8.2;0.3-1.5
+Ocean Perch (Redfish);Sebastes marinus;6.0-8.5;2-8;7.6-8.2;0.3-1.5
+Atlantic Wolffish;Anarhichas lupus;6.0-8.5;-1-10;7.6-8.2;0.3-1.5
+Ocean Pout;Zoarces americanus;5.5-8.0;1-15;7.5-8.2;0.4-2.0
+Monkfish (Goosefish);Lophius americanus;5.5-8.0;2-18;7.6-8.2;0.3-1.5
+Anglerfish;Lophius piscatorius;5.5-8.0;3-15;7.6-8.2;0.3-1.5
+John Dory;Zeus faber;5.0-7.5;10-20;7.6-8.3;0.3-1.8
+Opah (Moonfish);Lampris guttatus;5.0-7.5;8-22;7.7-8.3;0.1-0.8
+Escolar;Lepidocybium flavobrunneum;4.5-7.0;10-22;7.7-8.3;0.1-0.8
+Oilfish;Ruvettus pretiosus;4.5-7.0;10-22;7.7-8.3;0.1-0.8
+Patagonian Toothfish;Dissostichus eleginoides;6.5-9.0;-1-4;7.6-8.1;0.1-0.8
+Pacific Grenadier;Coryphaenoides acrolepis;5.0-7.5;1-7;7.6-8.1;0.05-0.5
+Orange Roughy;Hoplostethus atlanticus;5.5-7.5;3-9;7.6-8.1;0.05-0.5
+Alfonsino;Beryx decadactylus;5.0-7.5;8-18;7.6-8.2;0.1-0.8
+Splendid Alfonsino;Beryx splendens;5.0-7.5;8-18;7.6-8.2;0.1-0.8
+Black Oreopoly;Allocyttus niger;5.5-7.5;3-8;7.6-8.1;0.05-0.5
+Smooth Oreopoly;Pseudocyttus maculatus;5.5-7.5;3-8;7.6-8.1;0.05-0.5
+Tilefish (Golden);Lopholatilus chamaeleonticeps;5.0-7.5;8-17;7.6-8.2;0.2-1.0
+Blueline Tilefish;Caulolatilus microps;5.0-7.5;10-20;7.7-8.3;0.2-1.2
+Ocean Sunfish;Mola mola;4.5-7.5;10-28;7.7-8.3;0.2-1.5
+Slender Sunfish;Ranzania laevis;4.5-7.0;12-28;7.7-8.3;0.2-1.2
+Great White Shark;Carcharodon carcharias;5.0-8.0;10-26;7.7-8.3;0.2-1.5
+Shortfin Mako Shark;Isurus oxyrinchus;5.0-7.5;15-28;7.8-8.3;0.2-1.2
+Tiger Shark;Galeocerdo cuvier;4.5-7.0;18-30;7.7-8.4;0.2-1.5
+Whale Shark;Rhincodon typus;4.5-7.0;21-30;7.8-8.4;0.5-3.0
+Basking Shark;Cetorhinus maximus;5.5-8.5;8-20;7.7-8.3;0.8-4.0
+Scalloped Hammerhead;Sphyrna lewini;4.5-7.0;20-30;7.8-8.4;0.3-1.8
+Bull Shark;Carcharhinus leucas;4.0-7.5;18-32;7.2-8.4;0.5-3.0
+Blacktip Shark;Carcharhinus limbatus;4.5-7.0;20-30;7.7-8.4;0.4-2.0
+Whitetip Reef Shark;Triaenodon obesus;5.0-7.0;22-30;7.8-8.4;0.3-1.5
+Blue Shark;Prionace glauca;5.0-7.5;10-20;7.7-8.3;0.2-1.2
+Thresher Shark;Alopias vulpinus;5.0-7.5;12-22;7.7-8.3;0.2-1.2
+Manta Ray;Mobula birostris;5.0-7.0;20-30;7.8-8.4;0.4-2.5
+Eagle Ray;Aetobatus narinari;5.0-7.0;22-30;7.8-8.4;0.4-2.0
+Southern Stingray;Hypanus americanus;4.5-7.5;18-30;7.5-8.4;0.5-2.5
+Leopard Shark;Triakis semifasciata;5.0-8.0;10-22;7.6-8.3;0.5-2.5
+Lionfish;Pterois volitans;4.5-7.0;20-30;7.6-8.4;0.3-1.8
+Stonefish;Synanceia verrucosa;4.0-7.0;22-30;7.6-8.4;0.3-2.0
+Scorpionfish;Scorpaena plumieri;4.5-7.0;18-28;7.6-8.3;0.3-1.8
+Peacock Flounder;Bothus mancus;5.0-7.0;22-30;7.8-8.4;0.3-1.5
+Blue Tang;Acanthurus coeruleus;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Yellow Tang;Zebrasoma flavescens;5.0-7.5;24-28;7.8-8.4;0.3-1.5
+Clownfish (Anemonefish);Amphiprion ocellaris;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Moorish Idol;Zanclus cornutus;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Copperband Butterflyfish;Chelmon rostratus;5.0-7.5;24-28;7.8-8.4;0.3-1.5
+Queen Angel;Holacanthus ciliaris;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Emperor Angelfish;Pomacanthus imperator;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+French Angelfish;Pomacanthus paru;5.0-7.5;23-29;7.8-8.4;0.3-1.5
+Picasso Triggerfish;Rhinecanthus aculeatus;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Titan Triggerfish;Balistoides viridescens;5.0-7.0;24-30;7.8-8.4;0.3-1.5
+Queen Triggerfish;Balistes vetula;5.0-7.5;23-29;7.8-8.4;0.3-1.5
+Stoplight Parrotfish;Sparisoma viride;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Rainbow Parrotfish;Scarus guacamaia;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Bluehead Wrasse;Thalassoma bifasciatum;5.0-7.5;23-29;7.8-8.4;0.3-1.5
+Cleaner Wrasse;Labroides dimidiatus;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Royal Gramma;Gramma loreto;5.0-7.5;23-28;7.8-8.4;0.3-1.5
+Blue Damselfish;Chrysiptera cyanea;5.0-7.5;24-29;7.8-8.4;0.3-1.5
+Sergeant Major;Abudefduf saxatilis;5.0-7.5;22-29;7.7-8.4;0.4-2.0
+Garibaldi;Hypsypops rubicundus;5.5-8.0;12-20;7.7-8.3;0.4-2.0
+Longsnout Seahorse;Hippocampus reidi;5.0-7.5;23-28;7.8-8.4;0.3-1.5
+Leafy Seadragon;Phycodurus eques;5.5-8.0;14-19;7.8-8.3;0.4-1.8
+Weedy Seadragon;Phyllopteryx taeniolatus;5.5-8.0;12-18;7.8-8.3;0.4-1.8
+Trumpetfish;Aulostomus maculatus;5.0-7.5;23-29;7.8-8.4;0.3-1.5
+Smooth Trunkfish;Lactophrys triqueter;5.0-7.5;23-29;7.8-8.4;0.3-1.5
+Porcupinefish;Diodon hystrix;4.5-7.5;22-29;7.7-8.4;0.3-1.8
+Longspined Porcupinefish;Diodon holocanthus;4.5-7.5;22-29;7.7-8.4;0.3-1.8
+White-spotted Puffer;Arothron hispidus;4.5-7.5;22-30;7.7-8.4;0.3-1.8
+Red Cornetfish;Fistularia petimba;5.0-7.0;20-28;7.7-8.3;0.3-1.5
+Squirrelfish;Holocentrus adscensionis;5.0-7.5;22-28;7.8-8.4;0.3-1.5
+Blackbar Soldierfish;Myripristis jacobus;5.0-7.5;22-28;7.8-8.4;0.3-1.5
+Tarpon Snook;Centropomus pectinatus;4.5-7.5;22-32;7.4-8.4;0.6-3.0
+Common Snook;Centropomus undecimalis;4.5-7.5;20-32;7.4-8.4;0.6-3.0
+Tripletail;Lobotes surinamensis;4.5-7.5;20-30;7.5-8.4;0.5-2.5
+Bonefish (Pacific);Albula glossodonta;4.5-7.0;22-30;7.7-8.4;0.4-2.0
+Milkfish;Chanos chanos;4.0-7.5;20-33;7.2-8.5;0.8-4.0
+Ladyfish;Elops saurus;4.0-7.5;20-32;7.3-8.4;0.6-3.0
+Mullet (Striped);Mugil cephalus;3.5-8.0;12-32;7.2-8.5;1.0-5.0
+White Mullet;Mugil curema;4.0-8.0;15-32;7.3-8.5;1.0-4.5
+Needlefish (Houndfish);Tylosurus crocodilus;5.0-7.5;22-30;7.7-8.4;0.3-1.8
+Halfbeak;Hyporhamphus unifasciatus;5.0-7.5;20-30;7.6-8.4;0.4-2.0
+Flyingfish (Atlantic);Cheilopogon melanurus;5.0-7.0;22-29;7.8-8.4;0.2-1.2
+Remora (Suckerfish);Remora remora;4.5-7.0;18-30;7.7-8.4;0.2-1.5
+Sharksucker;Echeneis naucrates;4.5-7.0;20-30;7.7-8.4;0.3-1.8
+Green Moray Eel;Gymnothorax funebris;4.5-7.0;22-29;7.6-8.4;0.3-1.8
+Spotted Moray Eel;Gymnothorax moringa;4.5-7.0;22-29;7.6-8.4;0.3-1.8
+Conger Eel;Conger conger;5.0-7.5;8-20;7.6-8.3;0.4-2.0
+American Eel (Marine phase);Anguilla rostrata;4.5-8.0;10-28;7.2-8.3;0.6-3.0
+European Eel (Marine phase);Anguilla anguilla;4.5-8.0;8-26;7.2-8.3;0.6-3.0
+Wolf Eel;Anarrhichthys ocellatus;5.5-8.0;6-15;7.6-8.2;0.4-1.8
+Toadfish (Oyster);Opsanus tau;3.5-7.5;10-30;7.2-8.3;0.8-4.0
+Midshipman (Plainfin);Porichthys notatus;4.0-7.5;8-20;7.4-8.3;0.5-2.5
+Batfish (Shortnose);Ogcocephalus nasutus;4.5-7.0;20-28;7.6-8.3;0.3-1.5
+Red Lionfish;Pterois miles;4.5-7.0;22-30;7.6-8.4;0.3-1.8
+Sea Robin (Striped);Prionotus evolans;4.5-7.5;10-26;7.5-8.3;0.5-2.5
+Flying Gurnard;Dactylopterus volitans;5.0-7.5;18-28;7.7-8.3;0.3-1.8
+Smooth Dogfish;Mustelus canis;4.5-7.5;10-25;7.5-8.3;0.5-2.5
+Spiny Dogfish;Squalus acanthias;5.5-8.0;6-18;7.6-8.3;0.4-2.0
+Cookiecutter Shark;Isistius brasiliensis;4.5-7.0;12-26;7.7-8.3;0.05-0.5
+Megamouth Shark;Megachasma pelagios;4.5-7.0;5-20;7.6-8.2;0.1-0.8
+Greenland Shark;Somniosus microcephalus;6.0-9.0;-1-8;7.6-8.1;0.1-0.8
+Salmon Shark;Lamna ditropis;5.5-8.0;2-18;7.6-8.2;0.3-1.8
+Porbeagle Shark;Lamna nasus;5.5-8.0;2-18;7.6-8.2;0.3-1.8
+Horn Shark;Heterodontus francisci;5.0-7.5;12-22;7.6-8.3;0.4-2.0
+Nurse Shark;Ginglymostoma cirratum;4.0-7.0;20-30;7.6-8.4;0.3-2.0
+Zebra Shark;Stegostoma tigrinum;4.5-7.0;22-30;7.7-8.4;0.3-1.8
+Angelshark;Squatina squatina;5.0-7.5;10-20;7.6-8.3;0.4-2.0
+Electric Ray (Torpedo);Torpedo nobiliana;4.5-7.5;10-22;7.6-8.3;0.3-1.8
+Winter Skate;Leucoraja ocellata;5.5-8.0;2-18;7.5-8.2;0.4-2.0
+Thorny Skate;Amblyraja radiata;6.0-8.5;-1-14;7.6-8.2;0.3-1.8
+Barndoor Skate;Dipturus laevis;5.5-8.0;3-18;7.6-8.2;0.3-1.8
+Little Skate;Leucoraja erinacea;5.0-8.0;2-20;7.5-8.3;0.4-2.2
+Chimaera (Ratfish);Hydrolagus colliei;5.5-8.0;5-15;7.6-8.2;0.1-1.0
+Rabbitfish;Chimaera monstrosa;5.5-8.0;3-12;7.6-8.2;0.1-0.8
+Lanternfish (Myctophid);Myctophum punctatum;4.0-7.0;4-18;7.6-8.2;0.05-0.8
+Viperfish;Chauliodus sloani;4.0-6.5;3-12;7.6-8.1;0.01-0.3
+Deepsea Anglerfish;Melanocetus johnsonii;3.5-6.5;1-8;7.5-8.1;0.01-0.2

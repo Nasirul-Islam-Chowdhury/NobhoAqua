@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  color-scheme: dark;
+  --bg: #04101d;
+  --bg-2: #071a2b;
+  --card: rgba(13, 34, 54, 0.62);
+  --card-solid: #0c2236;
+  --line: rgba(120, 190, 230, 0.16);
+  --fg: #e8f3fb;
+  --muted: #8fa9bd;
+  --accent: #22d3ee;
+  --accent-2: #2dd4bf;
+  --accent-ink: #022b36;
+  --good: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+  --glow: rgba(34, 211, 238, 0.18);
+}
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f9fc;
+  --bg-2: #e6f2f8;
+  --card: rgba(255, 255, 255, 0.78);
+  --card-solid: #ffffff;
+  --line: rgba(10, 70, 110, 0.14);
+  --fg: #0a2236;
+  --muted: #4d6a80;
+  --accent: #0284c7;
+  --accent-2: #0d9488;
+  --accent-ink: #ffffff;
+  --good: #059669;
+  --warn: #b45309;
+  --danger: #dc2626;
+  --glow: rgba(2, 132, 199, 0.14);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg-2);
+  --color-card: var(--card);
+  --color-solid: var(--card-solid);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent-2);
+  --color-ink: var(--accent-ink);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-grotesk), var(--font-inter), system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.glass {
+  background: var(--card);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.text-grad {
+  background: linear-gradient(100deg, var(--accent), var(--accent-2) 60%, #a7f3d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.focus-ring:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.scroll-thin::-webkit-scrollbar { width: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--line); border-radius: 8px; }
+
+/* Leaflet theming */
+.leaflet-container { background: var(--bg-2); font-family: var(--font-sans); border-radius: inherit; }
+.leaflet-control-zoom a { background: var(--card-solid) !important; color: var(--fg) !important; border-color: var(--line) !important; }
+.leaflet-control-attribution { background: color-mix(in srgb, var(--bg) 70%, transparent) !important; color: var(--muted) !important; }
+.leaflet-control-attribution a { color: var(--accent) !important; }
+.leaflet-tooltip { background: var(--card-solid); color: var(--fg); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes rise { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: .55; } 100% { transform: translateY(-110vh) scale(1); opacity: 0; } }
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(248,113,113,.55); } 100% { box-shadow: 0 0 0 12px rgba(248,113,113,0); } }
+.wave-a { animation: drift 22s linear infinite; }
+.wave-b { animation: drift 34s linear infinite reverse; }
+.bubble { animation: rise linear infinite; }
+.pulse-danger { animation: pulse-ring 1.8s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-a, .wave-b, .bubble, .pulse-danger, .wave-slide, .rays, .swim, .fish-bob, .ripple, .orb { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+.dark-tiles .leaflet-tile-pane { filter: invert(1) hue-rotate(190deg) brightness(.85) contrast(.9) saturate(.7); }
+
+[data-theme="light"] .logo-mark { filter: invert(1) brightness(.25) sepia(1) hue-rotate(160deg) saturate(3); }
+
+/* hero water */
+@keyframes wave-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.wave-slide { animation: wave-slide linear infinite; }
+.rays {
+  background: repeating-linear-gradient(105deg, transparent 0 9%, var(--glow) 12%, transparent 16% 24%);
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 90%), linear-gradient(to right, transparent, #000 25%, #000 75%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, #000, transparent 90%), linear-gradient(to right, transparent, #000 25%, #000 75%, transparent);
+  mask-composite: intersect;
+  animation: sway 16s ease-in-out infinite alternate;
+  opacity: .6;
+}
+@keyframes sway { from { transform: translateX(-3%); } to { transform: translateX(3%); } }
+@keyframes swim-r { from { left: -10%; } to { left: 110%; } }
+@keyframes swim-l { from { left: 110%; } to { left: -10%; } }
+.swim-r { animation: swim-r linear infinite; }
+.swim-l { animation: swim-l linear infinite; transform: scaleX(-1); }
+@keyframes bob { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-6px) rotate(-3deg); } }
+.fish-bob { animation: bob 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+@keyframes ripple { 0% { transform: scale(.7); opacity: .7; } 100% { transform: scale(1.15); opacity: 0; } }
+.ripple { animation: ripple 6.6s ease-out infinite; }
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.orb { animation: floaty 6s ease-in-out infinite; }
+
+.dash section[id] { padding-top: 2rem; padding-bottom: 2rem; }
+.dash section#explorer, .dash section#hab { background: transparent; }

@@ -1,0 +1,5002 @@
+[
+ {
+  "id": 1,
+  "slug": "yellowfin-tuna",
+  "name": "Yellowfin Tuna",
+  "scientific": "Thunnus albacares",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   6.5
+  ],
+  "temp": [
+   18.0,
+   31.0
+  ],
+  "ph": [
+   7.8,
+   8.2
+  ],
+  "chl": [
+   0.2,
+   1.5
+  ]
+ },
+ {
+  "id": 2,
+  "slug": "atlantic-salmon",
+  "name": "Atlantic Salmon",
+  "scientific": "Salmo salar",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   6.5,
+   9.0
+  ],
+  "temp": [
+   8.0,
+   16.0
+  ],
+  "ph": [
+   7.5,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 3,
+  "slug": "skipjack-tuna",
+  "name": "Skipjack Tuna",
+  "scientific": "Katsuwonus pelamis",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.0,
+   6.0
+  ],
+  "temp": [
+   15.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 4,
+  "slug": "atlantic-cod",
+  "name": "Atlantic Cod",
+  "scientific": "Gadus morhua",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   2.0,
+   12.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 5,
+  "slug": "hilsa-tenualosa-ilisha",
+  "name": "Hilsa (Tenualosa ilisha)",
+  "scientific": "Tenualosa ilisha",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.8,
+   3.5
+  ]
+ },
+ {
+  "id": 6,
+  "slug": "indo-pacific-king-mackerel",
+  "name": "Indo-Pacific King Mackerel",
+  "scientific": "Scomberomorus guttatus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.0
+  ]
+ },
+ {
+  "id": 7,
+  "slug": "mahi-mahi-dolphinfish",
+  "name": "Mahi Mahi (Dolphinfish)",
+  "scientific": "Coryphaena hippurus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   21.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 8,
+  "slug": "sailfish",
+  "name": "Sailfish",
+  "scientific": "Istiophorus platypterus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   6.5
+  ],
+  "temp": [
+   22.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 9,
+  "slug": "red-snapper",
+  "name": "Red Snapper",
+  "scientific": "Lutjanus campechanus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   16.0,
+   27.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 10,
+  "slug": "swordfish",
+  "name": "Swordfish",
+  "scientific": "Xiphias gladius",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.0,
+   6.5
+  ],
+  "temp": [
+   5.0,
+   27.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   1.0
+  ]
+ },
+ {
+  "id": 11,
+  "slug": "barramundi-sea-bass",
+  "name": "Barramundi (Sea Bass)",
+  "scientific": "Lates calcarifer",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   22.0,
+   32.0
+  ],
+  "ph": [
+   7.5,
+   8.5
+  ],
+  "chl": [
+   0.8,
+   4.0
+  ]
+ },
+ {
+  "id": 12,
+  "slug": "cobia",
+  "name": "Cobia",
+  "scientific": "Rachycentron canadum",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.2
+  ]
+ },
+ {
+  "id": 13,
+  "slug": "bluefin-tuna",
+  "name": "Bluefin Tuna",
+  "scientific": "Thunnus thynnus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   24.0
+  ],
+  "ph": [
+   7.7,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 14,
+  "slug": "atlantic-herring",
+  "name": "Atlantic Herring",
+  "scientific": "Clupea harengus",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Cold-water",
+  "productivity": "Eutrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   1.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   3.0
+  ]
+ },
+ {
+  "id": 15,
+  "slug": "pacific-halibut",
+  "name": "Pacific Halibut",
+  "scientific": "Hippoglossus stenolepis",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   3.0,
+   11.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 16,
+  "slug": "japanese-amberjack-buri",
+  "name": "Japanese Amberjack (Buri)",
+  "scientific": "Seriola quinqueradiata",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   7.5
+  ],
+  "temp": [
+   15.0,
+   26.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 17,
+  "slug": "giant-grouper",
+  "name": "Giant Grouper",
+  "scientific": "Epinephelus lanceolatus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 18,
+  "slug": "wahoo",
+  "name": "Wahoo",
+  "scientific": "Acanthocybium solandri",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   6.5
+  ],
+  "temp": [
+   21.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 19,
+  "slug": "chilean-sea-bass",
+  "name": "Chilean Sea Bass",
+  "scientific": "Dissostichus eleginoides",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Polar",
+  "productivity": "Oligotrophic",
+  "do": [
+   6.5,
+   9.0
+  ],
+  "temp": [
+   -1.0,
+   4.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 20,
+  "slug": "great-barracuda",
+  "name": "Great Barracuda",
+  "scientific": "Sphyraena barracuda",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   21.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 21,
+  "slug": "blue-marlin",
+  "name": "Blue Marlin",
+  "scientific": "Makaira nigricans",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.5,
+   6.5
+  ],
+  "temp": [
+   22.0,
+   31.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 22,
+  "slug": "striped-marlin",
+  "name": "Striped Marlin",
+  "scientific": "Kajikia audax",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   6.5
+  ],
+  "temp": [
+   18.0,
+   27.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 23,
+  "slug": "black-marlin",
+  "name": "Black Marlin",
+  "scientific": "Istiompax indica",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   6.5
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 24,
+  "slug": "tarpon",
+  "name": "Tarpon",
+  "scientific": "Megalops atlanticus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   3.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   32.0
+  ],
+  "ph": [
+   7.2,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   3.5
+  ]
+ },
+ {
+  "id": 25,
+  "slug": "bonefish",
+  "name": "Bonefish",
+  "scientific": "Albula vulpes",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   31.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 26,
+  "slug": "permit",
+  "name": "Permit",
+  "scientific": "Trachinotus falcatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   21.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 27,
+  "slug": "jack-crevalle",
+  "name": "Jack Crevalle",
+  "scientific": "Caranx hippos",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 28,
+  "slug": "giant-trevally-gt",
+  "name": "Giant Trevally (GT)",
+  "scientific": "Caranx ignobilis",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 29,
+  "slug": "king-threadfin",
+  "name": "King Threadfin",
+  "scientific": "Polydactylus macrochir",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   31.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.8,
+   3.0
+  ]
+ },
+ {
+  "id": 30,
+  "slug": "spanish-mackerel",
+  "name": "Spanish Mackerel",
+  "scientific": "Scomberomorus maculatus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   29.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.2
+  ]
+ },
+ {
+  "id": 31,
+  "slug": "narrow-barred-mackerel",
+  "name": "Narrow-barred Mackerel",
+  "scientific": "Scomberomorus commerson",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   21.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 32,
+  "slug": "pacific-cod",
+  "name": "Pacific Cod",
+  "scientific": "Gadus macrocephalus",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   0.0,
+   12.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 33,
+  "slug": "pollock",
+  "name": "Pollock",
+  "scientific": "Pollachius virens",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   4.0,
+   14.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.5,
+   2.2
+  ]
+ },
+ {
+  "id": 34,
+  "slug": "haddock",
+  "name": "Haddock",
+  "scientific": "Melanogrammus aeglefinus",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   2.0,
+   10.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 35,
+  "slug": "european-seabass",
+  "name": "European Seabass",
+  "scientific": "Dicentrarchus labrax",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   8.0,
+   24.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 36,
+  "slug": "gilthead-seabream",
+  "name": "Gilthead Seabream",
+  "scientific": "Sparus aurata",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   28.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 37,
+  "slug": "turbot",
+  "name": "Turbot",
+  "scientific": "Scophthalmus maximus",
+  "group": "Cod & Flatfish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   8.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 38,
+  "slug": "european-flounder",
+  "name": "European Flounder",
+  "scientific": "Platichthys flesus",
+  "group": "Cod & Flatfish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   5.0,
+   20.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 39,
+  "slug": "summer-flounder-fluke",
+  "name": "Summer Flounder (Fluke)",
+  "scientific": "Paralichthys dentatus",
+  "group": "Cod & Flatfish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   23.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.2
+  ]
+ },
+ {
+  "id": 40,
+  "slug": "dover-sole",
+  "name": "Dover Sole",
+  "scientific": "Solea solea",
+  "group": "Cod & Flatfish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   8.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.5,
+   2.0
+  ]
+ },
+ {
+  "id": 41,
+  "slug": "yellowtail-snapper",
+  "name": "Yellowtail Snapper",
+  "scientific": "Ocyurus chrysurus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 42,
+  "slug": "mangrove-red-snapper",
+  "name": "Mangrove Red Snapper",
+  "scientific": "Lutjanus argentimaculatus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   32.0
+  ],
+  "ph": [
+   7.4,
+   8.4
+  ],
+  "chl": [
+   0.8,
+   3.5
+  ]
+ },
+ {
+  "id": 43,
+  "slug": "mutton-snapper",
+  "name": "Mutton Snapper",
+  "scientific": "Lutjanus analis",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.6
+  ]
+ },
+ {
+  "id": 44,
+  "slug": "cubera-snapper",
+  "name": "Cubera Snapper",
+  "scientific": "Lutjanus cyanopterus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   21.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 45,
+  "slug": "black-sea-bass",
+  "name": "Black Sea Bass",
+  "scientific": "Centropristis striata",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   24.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.2
+  ]
+ },
+ {
+  "id": 46,
+  "slug": "goliath-grouper",
+  "name": "Goliath Grouper",
+  "scientific": "Epinephelus itajara",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.5,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   3.0
+  ]
+ },
+ {
+  "id": 47,
+  "slug": "red-grouper",
+  "name": "Red Grouper",
+  "scientific": "Epinephelus morio",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 48,
+  "slug": "gag-grouper",
+  "name": "Gag Grouper",
+  "scientific": "Mycteroperca microlepis",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   16.0,
+   27.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 49,
+  "slug": "nassau-grouper",
+  "name": "Nassau Grouper",
+  "scientific": "Epinephelus striatus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 50,
+  "slug": "coral-trout",
+  "name": "Coral Trout",
+  "scientific": "Plectropomus leopardus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 51,
+  "slug": "atlantic-mackerel",
+  "name": "Atlantic Mackerel",
+  "scientific": "Scomber scombrus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   7.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 52,
+  "slug": "chub-mackerel",
+  "name": "Chub Mackerel",
+  "scientific": "Scomber japonicus",
+  "group": "Tuna, Mackerel & Billfish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   24.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.2
+  ]
+ },
+ {
+  "id": 53,
+  "slug": "pacific-sardine",
+  "name": "Pacific Sardine",
+  "scientific": "Sardinops sagax",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   22.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.5
+  ]
+ },
+ {
+  "id": 54,
+  "slug": "european-pilchard",
+  "name": "European Pilchard",
+  "scientific": "Sardina pilchardus",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   3.0
+  ]
+ },
+ {
+  "id": 55,
+  "slug": "european-anchovy",
+  "name": "European Anchovy",
+  "scientific": "Engraulis encrasicolus",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   24.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.8,
+   4.0
+  ]
+ },
+ {
+  "id": 56,
+  "slug": "peruvian-anchoveta",
+  "name": "Peruvian Anchoveta",
+  "scientific": "Engraulis ringens",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   1.0,
+   6.0
+  ]
+ },
+ {
+  "id": 57,
+  "slug": "gulf-menhaden",
+  "name": "Gulf Menhaden",
+  "scientific": "Brevoortia patronus",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   30.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   1.0,
+   5.0
+  ]
+ },
+ {
+  "id": 58,
+  "slug": "atlantic-menhaden",
+  "name": "Atlantic Menhaden",
+  "scientific": "Brevoortia tyrannus",
+  "group": "Herring, Sardines & Anchovies",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   26.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   1.0,
+   5.0
+  ]
+ },
+ {
+  "id": 59,
+  "slug": "white-seabass",
+  "name": "White Seabass",
+  "scientific": "Atractoscion nobilis",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   22.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 60,
+  "slug": "black-drum",
+  "name": "Black Drum",
+  "scientific": "Pogonias cromis",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   30.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 61,
+  "slug": "red-drum-redfish",
+  "name": "Red Drum (Redfish)",
+  "scientific": "Sciaenops ocellatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   32.0
+  ],
+  "ph": [
+   7.4,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.5
+  ]
+ },
+ {
+  "id": 62,
+  "slug": "spotted-seatrout",
+  "name": "Spotted Seatrout",
+  "scientific": "Cynoscion nebulosus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   32.0
+  ],
+  "ph": [
+   7.5,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 63,
+  "slug": "weakfish",
+  "name": "Weakfish",
+  "scientific": "Cynoscion regalis",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   26.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 64,
+  "slug": "atlantic-croaker",
+  "name": "Atlantic Croaker",
+  "scientific": "Micropogonias undulatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   30.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.5
+  ]
+ },
+ {
+  "id": 65,
+  "slug": "california-sheephead",
+  "name": "California Sheephead",
+  "scientific": "Bodianus pulcher",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   22.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 66,
+  "slug": "humphead-wrasse",
+  "name": "Humphead Wrasse",
+  "scientific": "Cheilinus undulatus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   24.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 67,
+  "slug": "bluefish",
+  "name": "Bluefish",
+  "scientific": "Pomatomus saltatrix",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   14.0,
+   27.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 68,
+  "slug": "amberjack-greater",
+  "name": "Amberjack (Greater)",
+  "scientific": "Seriola dumerili",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 69,
+  "slug": "florida-pompano",
+  "name": "Florida Pompano",
+  "scientific": "Trachinotus carolinus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   18.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 70,
+  "slug": "lookdown",
+  "name": "Lookdown",
+  "scientific": "Selene vomer",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   29.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 71,
+  "slug": "sheepshead",
+  "name": "Sheepshead",
+  "scientific": "Archosargus probatocephalus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   30.0
+  ],
+  "ph": [
+   7.4,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 72,
+  "slug": "scup-porgy",
+  "name": "Scup (Porgy)",
+  "scientific": "Stenotomus chrysops",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   24.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.2
+  ]
+ },
+ {
+  "id": 73,
+  "slug": "red-seabream",
+  "name": "Red Seabream",
+  "scientific": "Pagrus major",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   14.0,
+   26.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 74,
+  "slug": "pink-dentex",
+  "name": "Pink Dentex",
+  "scientific": "Dentex gibbosus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   14.0,
+   24.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 75,
+  "slug": "atlantic-halibut",
+  "name": "Atlantic Halibut",
+  "scientific": "Hippoglossus hippoglossus",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   1.0,
+   11.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 76,
+  "slug": "greenland-halibut",
+  "name": "Greenland Halibut",
+  "scientific": "Reinhardtius hippoglossoides",
+  "group": "Cod & Flatfish",
+  "zone": "Polar",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   -1.0,
+   5.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 77,
+  "slug": "petrale-sole",
+  "name": "Petrale Sole",
+  "scientific": "Eopsetta jordani",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   5.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 78,
+  "slug": "english-sole",
+  "name": "English Sole",
+  "scientific": "Parophrys vetulus",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   16.0
+  ],
+  "ph": [
+   7.5,
+   8.2
+  ],
+  "chl": [
+   0.5,
+   2.0
+  ]
+ },
+ {
+  "id": 79,
+  "slug": "starry-flounder",
+  "name": "Starry Flounder",
+  "scientific": "Platichthys stellatus",
+  "group": "Cod & Flatfish",
+  "zone": "Cold-water",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   18.0
+  ],
+  "ph": [
+   7.3,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 80,
+  "slug": "lingcod",
+  "name": "Lingcod",
+  "scientific": "Ophiodon elongatus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   5.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 81,
+  "slug": "sablefish-black-cod",
+  "name": "Sablefish (Black Cod)",
+  "scientific": "Anoplopoma fimbria",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   1.0,
+   10.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 82,
+  "slug": "cabezon",
+  "name": "Cabezon",
+  "scientific": "Scorpaenichthys marmoratus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   7.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 83,
+  "slug": "yellowtail-rockfish",
+  "name": "Yellowtail Rockfish",
+  "scientific": "Sebastes flavidus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   16.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.6
+  ]
+ },
+ {
+  "id": 84,
+  "slug": "black-rockfish",
+  "name": "Black Rockfish",
+  "scientific": "Sebastes melanops",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   16.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 85,
+  "slug": "bocaccio-rockfish",
+  "name": "Bocaccio Rockfish",
+  "scientific": "Sebastes paucispinis",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 86,
+  "slug": "ocean-perch-redfish",
+  "name": "Ocean Perch (Redfish)",
+  "scientific": "Sebastes marinus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   2.0,
+   8.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 87,
+  "slug": "atlantic-wolffish",
+  "name": "Atlantic Wolffish",
+  "scientific": "Anarhichas lupus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Polar",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   -1.0,
+   10.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 88,
+  "slug": "ocean-pout",
+  "name": "Ocean Pout",
+  "scientific": "Zoarces americanus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   1.0,
+   15.0
+  ],
+  "ph": [
+   7.5,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 89,
+  "slug": "monkfish-goosefish",
+  "name": "Monkfish (Goosefish)",
+  "scientific": "Lophius americanus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 90,
+  "slug": "anglerfish",
+  "name": "Anglerfish",
+  "scientific": "Lophius piscatorius",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   3.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 91,
+  "slug": "john-dory",
+  "name": "John Dory",
+  "scientific": "Zeus faber",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 92,
+  "slug": "opah-moonfish",
+  "name": "Opah (Moonfish)",
+  "scientific": "Lampris guttatus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   22.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 93,
+  "slug": "escolar",
+  "name": "Escolar",
+  "scientific": "Lepidocybium flavobrunneum",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   10.0,
+   22.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 94,
+  "slug": "oilfish",
+  "name": "Oilfish",
+  "scientific": "Ruvettus pretiosus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   10.0,
+   22.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 95,
+  "slug": "patagonian-toothfish",
+  "name": "Patagonian Toothfish",
+  "scientific": "Dissostichus eleginoides",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Polar",
+  "productivity": "Oligotrophic",
+  "do": [
+   6.5,
+   9.0
+  ],
+  "temp": [
+   -1.0,
+   4.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 96,
+  "slug": "pacific-grenadier",
+  "name": "Pacific Grenadier",
+  "scientific": "Coryphaenoides acrolepis",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Polar",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   1.0,
+   7.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "id": 97,
+  "slug": "orange-roughy",
+  "name": "Orange Roughy",
+  "scientific": "Hoplostethus atlanticus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.5,
+   7.5
+  ],
+  "temp": [
+   3.0,
+   9.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "id": 98,
+  "slug": "alfonsino",
+  "name": "Alfonsino",
+  "scientific": "Beryx decadactylus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 99,
+  "slug": "splendid-alfonsino",
+  "name": "Splendid Alfonsino",
+  "scientific": "Beryx splendens",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 100,
+  "slug": "black-oreopoly",
+  "name": "Black Oreopoly",
+  "scientific": "Allocyttus niger",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.5,
+   7.5
+  ],
+  "temp": [
+   3.0,
+   8.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "id": 101,
+  "slug": "smooth-oreopoly",
+  "name": "Smooth Oreopoly",
+  "scientific": "Pseudocyttus maculatus",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.5,
+   7.5
+  ],
+  "temp": [
+   3.0,
+   8.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "id": 102,
+  "slug": "tilefish-golden",
+  "name": "Tilefish (Golden)",
+  "scientific": "Lopholatilus chamaeleonticeps",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   17.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.2,
+   1.0
+  ]
+ },
+ {
+  "id": 103,
+  "slug": "blueline-tilefish",
+  "name": "Blueline Tilefish",
+  "scientific": "Caulolatilus microps",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   20.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 104,
+  "slug": "ocean-sunfish",
+  "name": "Ocean Sunfish",
+  "scientific": "Mola mola",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.5
+  ]
+ },
+ {
+  "id": 105,
+  "slug": "slender-sunfish",
+  "name": "Slender Sunfish",
+  "scientific": "Ranzania laevis",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   12.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 106,
+  "slug": "great-white-shark",
+  "name": "Great White Shark",
+  "scientific": "Carcharodon carcharias",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   26.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.5
+  ]
+ },
+ {
+  "id": 107,
+  "slug": "shortfin-mako-shark",
+  "name": "Shortfin Mako Shark",
+  "scientific": "Isurus oxyrinchus",
+  "group": "Sharks",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   15.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 108,
+  "slug": "tiger-shark",
+  "name": "Tiger Shark",
+  "scientific": "Galeocerdo cuvier",
+  "group": "Sharks",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.5
+  ]
+ },
+ {
+  "id": 109,
+  "slug": "whale-shark",
+  "name": "Whale Shark",
+  "scientific": "Rhincodon typus",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   21.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   3.0
+  ]
+ },
+ {
+  "id": 110,
+  "slug": "basking-shark",
+  "name": "Basking Shark",
+  "scientific": "Cetorhinus maximus",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.5,
+   8.5
+  ],
+  "temp": [
+   8.0,
+   20.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.8,
+   4.0
+  ]
+ },
+ {
+  "id": 111,
+  "slug": "scalloped-hammerhead",
+  "name": "Scalloped Hammerhead",
+  "scientific": "Sphyrna lewini",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 112,
+  "slug": "bull-shark",
+  "name": "Bull Shark",
+  "scientific": "Carcharhinus leucas",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.5
+  ],
+  "temp": [
+   18.0,
+   32.0
+  ],
+  "ph": [
+   7.2,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   3.0
+  ]
+ },
+ {
+  "id": 113,
+  "slug": "blacktip-shark",
+  "name": "Blacktip Shark",
+  "scientific": "Carcharhinus limbatus",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 114,
+  "slug": "whitetip-reef-shark",
+  "name": "Whitetip Reef Shark",
+  "scientific": "Triaenodon obesus",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 115,
+  "slug": "blue-shark",
+  "name": "Blue Shark",
+  "scientific": "Prionace glauca",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   20.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 116,
+  "slug": "thresher-shark",
+  "name": "Thresher Shark",
+  "scientific": "Alopias vulpinus",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   22.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 117,
+  "slug": "manta-ray",
+  "name": "Manta Ray",
+  "scientific": "Mobula birostris",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.5
+  ]
+ },
+ {
+  "id": 118,
+  "slug": "eagle-ray",
+  "name": "Eagle Ray",
+  "scientific": "Aetobatus narinari",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 119,
+  "slug": "southern-stingray",
+  "name": "Southern Stingray",
+  "scientific": "Hypanus americanus",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   18.0,
+   30.0
+  ],
+  "ph": [
+   7.5,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 120,
+  "slug": "leopard-shark",
+  "name": "Leopard Shark",
+  "scientific": "Triakis semifasciata",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   22.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 121,
+  "slug": "lionfish",
+  "name": "Lionfish",
+  "scientific": "Pterois volitans",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 122,
+  "slug": "stonefish",
+  "name": "Stonefish",
+  "scientific": "Synanceia verrucosa",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   2.0
+  ]
+ },
+ {
+  "id": 123,
+  "slug": "scorpionfish",
+  "name": "Scorpionfish",
+  "scientific": "Scorpaena plumieri",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   28.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 124,
+  "slug": "peacock-flounder",
+  "name": "Peacock Flounder",
+  "scientific": "Bothus mancus",
+  "group": "Cod & Flatfish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 125,
+  "slug": "blue-tang",
+  "name": "Blue Tang",
+  "scientific": "Acanthurus coeruleus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 126,
+  "slug": "yellow-tang",
+  "name": "Yellow Tang",
+  "scientific": "Zebrasoma flavescens",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 127,
+  "slug": "clownfish-anemonefish",
+  "name": "Clownfish (Anemonefish)",
+  "scientific": "Amphiprion ocellaris",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 128,
+  "slug": "moorish-idol",
+  "name": "Moorish Idol",
+  "scientific": "Zanclus cornutus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 129,
+  "slug": "copperband-butterflyfish",
+  "name": "Copperband Butterflyfish",
+  "scientific": "Chelmon rostratus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 130,
+  "slug": "queen-angel",
+  "name": "Queen Angel",
+  "scientific": "Holacanthus ciliaris",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 131,
+  "slug": "emperor-angelfish",
+  "name": "Emperor Angelfish",
+  "scientific": "Pomacanthus imperator",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 132,
+  "slug": "french-angelfish",
+  "name": "French Angelfish",
+  "scientific": "Pomacanthus paru",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 133,
+  "slug": "picasso-triggerfish",
+  "name": "Picasso Triggerfish",
+  "scientific": "Rhinecanthus aculeatus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 134,
+  "slug": "titan-triggerfish",
+  "name": "Titan Triggerfish",
+  "scientific": "Balistoides viridescens",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   24.0,
+   30.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 135,
+  "slug": "queen-triggerfish",
+  "name": "Queen Triggerfish",
+  "scientific": "Balistes vetula",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 136,
+  "slug": "stoplight-parrotfish",
+  "name": "Stoplight Parrotfish",
+  "scientific": "Sparisoma viride",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 137,
+  "slug": "rainbow-parrotfish",
+  "name": "Rainbow Parrotfish",
+  "scientific": "Scarus guacamaia",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 138,
+  "slug": "bluehead-wrasse",
+  "name": "Bluehead Wrasse",
+  "scientific": "Thalassoma bifasciatum",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 139,
+  "slug": "cleaner-wrasse",
+  "name": "Cleaner Wrasse",
+  "scientific": "Labroides dimidiatus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 140,
+  "slug": "royal-gramma",
+  "name": "Royal Gramma",
+  "scientific": "Gramma loreto",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 141,
+  "slug": "blue-damselfish",
+  "name": "Blue Damselfish",
+  "scientific": "Chrysiptera cyanea",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   24.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 142,
+  "slug": "sergeant-major",
+  "name": "Sergeant Major",
+  "scientific": "Abudefduf saxatilis",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 143,
+  "slug": "garibaldi",
+  "name": "Garibaldi",
+  "scientific": "Hypsypops rubicundus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   12.0,
+   20.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 144,
+  "slug": "longsnout-seahorse",
+  "name": "Longsnout Seahorse",
+  "scientific": "Hippocampus reidi",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 145,
+  "slug": "leafy-seadragon",
+  "name": "Leafy Seadragon",
+  "scientific": "Phycodurus eques",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   14.0,
+   19.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 146,
+  "slug": "weedy-seadragon",
+  "name": "Weedy Seadragon",
+  "scientific": "Phyllopteryx taeniolatus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   12.0,
+   18.0
+  ],
+  "ph": [
+   7.8,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 147,
+  "slug": "trumpetfish",
+  "name": "Trumpetfish",
+  "scientific": "Aulostomus maculatus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 148,
+  "slug": "smooth-trunkfish",
+  "name": "Smooth Trunkfish",
+  "scientific": "Lactophrys triqueter",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   23.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 149,
+  "slug": "porcupinefish",
+  "name": "Porcupinefish",
+  "scientific": "Diodon hystrix",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 150,
+  "slug": "longspined-porcupinefish",
+  "name": "Longspined Porcupinefish",
+  "scientific": "Diodon holocanthus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 151,
+  "slug": "white-spotted-puffer",
+  "name": "White-spotted Puffer",
+  "scientific": "Arothron hispidus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 152,
+  "slug": "red-cornetfish",
+  "name": "Red Cornetfish",
+  "scientific": "Fistularia petimba",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 153,
+  "slug": "squirrelfish",
+  "name": "Squirrelfish",
+  "scientific": "Holocentrus adscensionis",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 154,
+  "slug": "blackbar-soldierfish",
+  "name": "Blackbar Soldierfish",
+  "scientific": "Myripristis jacobus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   28.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 155,
+  "slug": "tarpon-snook",
+  "name": "Tarpon Snook",
+  "scientific": "Centropomus pectinatus",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   32.0
+  ],
+  "ph": [
+   7.4,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 156,
+  "slug": "common-snook",
+  "name": "Common Snook",
+  "scientific": "Centropomus undecimalis",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   32.0
+  ],
+  "ph": [
+   7.4,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 157,
+  "slug": "tripletail",
+  "name": "Tripletail",
+  "scientific": "Lobotes surinamensis",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.5,
+   8.4
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 158,
+  "slug": "bonefish-pacific",
+  "name": "Bonefish (Pacific)",
+  "scientific": "Albula glossodonta",
+  "group": "Snappers, Groupers & Seabass",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 159,
+  "slug": "milkfish",
+  "name": "Milkfish",
+  "scientific": "Chanos chanos",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   33.0
+  ],
+  "ph": [
+   7.2,
+   8.5
+  ],
+  "chl": [
+   0.8,
+   4.0
+  ]
+ },
+ {
+  "id": 160,
+  "slug": "ladyfish",
+  "name": "Ladyfish",
+  "scientific": "Elops saurus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   32.0
+  ],
+  "ph": [
+   7.3,
+   8.4
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 161,
+  "slug": "mullet-striped",
+  "name": "Mullet (Striped)",
+  "scientific": "Mugil cephalus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   3.5,
+   8.0
+  ],
+  "temp": [
+   12.0,
+   32.0
+  ],
+  "ph": [
+   7.2,
+   8.5
+  ],
+  "chl": [
+   1.0,
+   5.0
+  ]
+ },
+ {
+  "id": 162,
+  "slug": "white-mullet",
+  "name": "White Mullet",
+  "scientific": "Mugil curema",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   8.0
+  ],
+  "temp": [
+   15.0,
+   32.0
+  ],
+  "ph": [
+   7.3,
+   8.5
+  ],
+  "chl": [
+   1.0,
+   4.5
+  ]
+ },
+ {
+  "id": 163,
+  "slug": "needlefish-houndfish",
+  "name": "Needlefish (Houndfish)",
+  "scientific": "Tylosurus crocodilus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 164,
+  "slug": "halfbeak",
+  "name": "Halfbeak",
+  "scientific": "Hyporhamphus unifasciatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 165,
+  "slug": "flyingfish-atlantic",
+  "name": "Flyingfish (Atlantic)",
+  "scientific": "Cheilopogon melanurus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.8,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.2
+  ]
+ },
+ {
+  "id": 166,
+  "slug": "remora-suckerfish",
+  "name": "Remora (Suckerfish)",
+  "scientific": "Remora remora",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   18.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.2,
+   1.5
+  ]
+ },
+ {
+  "id": 167,
+  "slug": "sharksucker",
+  "name": "Sharksucker",
+  "scientific": "Echeneis naucrates",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 168,
+  "slug": "green-moray-eel",
+  "name": "Green Moray Eel",
+  "scientific": "Gymnothorax funebris",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 169,
+  "slug": "spotted-moray-eel",
+  "name": "Spotted Moray Eel",
+  "scientific": "Gymnothorax moringa",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   29.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 170,
+  "slug": "conger-eel",
+  "name": "Conger Eel",
+  "scientific": "Conger conger",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 171,
+  "slug": "american-eel-marine-phase",
+  "name": "American Eel (Marine phase)",
+  "scientific": "Anguilla rostrata",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   8.0
+  ],
+  "temp": [
+   10.0,
+   28.0
+  ],
+  "ph": [
+   7.2,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 172,
+  "slug": "european-eel-marine-phase",
+  "name": "European Eel (Marine phase)",
+  "scientific": "Anguilla anguilla",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   8.0
+  ],
+  "temp": [
+   8.0,
+   26.0
+  ],
+  "ph": [
+   7.2,
+   8.3
+  ],
+  "chl": [
+   0.6,
+   3.0
+  ]
+ },
+ {
+  "id": 173,
+  "slug": "wolf-eel",
+  "name": "Wolf Eel",
+  "scientific": "Anarrhichthys ocellatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   1.8
+  ]
+ },
+ {
+  "id": 174,
+  "slug": "toadfish-oyster",
+  "name": "Toadfish (Oyster)",
+  "scientific": "Opsanus tau",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Eutrophic",
+  "do": [
+   3.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   30.0
+  ],
+  "ph": [
+   7.2,
+   8.3
+  ],
+  "chl": [
+   0.8,
+   4.0
+  ]
+ },
+ {
+  "id": 175,
+  "slug": "midshipman-plainfin",
+  "name": "Midshipman (Plainfin)",
+  "scientific": "Porichthys notatus",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.0,
+   7.5
+  ],
+  "temp": [
+   8.0,
+   20.0
+  ],
+  "ph": [
+   7.4,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 176,
+  "slug": "batfish-shortnose",
+  "name": "Batfish (Shortnose)",
+  "scientific": "Ogcocephalus nasutus",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   28.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.5
+  ]
+ },
+ {
+  "id": 177,
+  "slug": "red-lionfish",
+  "name": "Red Lionfish",
+  "scientific": "Pterois miles",
+  "group": "Reef & Ornamental Fish",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 178,
+  "slug": "sea-robin-striped",
+  "name": "Sea Robin (Striped)",
+  "scientific": "Prionotus evolans",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   26.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 179,
+  "slug": "flying-gurnard",
+  "name": "Flying Gurnard",
+  "scientific": "Dactylopterus volitans",
+  "group": "Coastal & Estuarine Fish",
+  "zone": "Subtropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   18.0,
+   28.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 180,
+  "slug": "smooth-dogfish",
+  "name": "Smooth Dogfish",
+  "scientific": "Mustelus canis",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Eutrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   25.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.5,
+   2.5
+  ]
+ },
+ {
+  "id": 181,
+  "slug": "spiny-dogfish",
+  "name": "Spiny Dogfish",
+  "scientific": "Squalus acanthias",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   6.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 182,
+  "slug": "cookiecutter-shark",
+  "name": "Cookiecutter Shark",
+  "scientific": "Isistius brasiliensis",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   12.0,
+   26.0
+  ],
+  "ph": [
+   7.7,
+   8.3
+  ],
+  "chl": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "id": 183,
+  "slug": "megamouth-shark",
+  "name": "Megamouth Shark",
+  "scientific": "Megachasma pelagios",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   5.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 184,
+  "slug": "greenland-shark",
+  "name": "Greenland Shark",
+  "scientific": "Somniosus microcephalus",
+  "group": "Sharks",
+  "zone": "Polar",
+  "productivity": "Oligotrophic",
+  "do": [
+   6.0,
+   9.0
+  ],
+  "temp": [
+   -1.0,
+   8.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 185,
+  "slug": "salmon-shark",
+  "name": "Salmon Shark",
+  "scientific": "Lamna ditropis",
+  "group": "Sharks",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 186,
+  "slug": "porbeagle-shark",
+  "name": "Porbeagle Shark",
+  "scientific": "Lamna nasus",
+  "group": "Sharks",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 187,
+  "slug": "horn-shark",
+  "name": "Horn Shark",
+  "scientific": "Heterodontus francisci",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   12.0,
+   22.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 188,
+  "slug": "nurse-shark",
+  "name": "Nurse Shark",
+  "scientific": "Ginglymostoma cirratum",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.0,
+   7.0
+  ],
+  "temp": [
+   20.0,
+   30.0
+  ],
+  "ph": [
+   7.6,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   2.0
+  ]
+ },
+ {
+  "id": 189,
+  "slug": "zebra-shark",
+  "name": "Zebra Shark",
+  "scientific": "Stegostoma tigrinum",
+  "group": "Sharks",
+  "zone": "Tropical",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.0
+  ],
+  "temp": [
+   22.0,
+   30.0
+  ],
+  "ph": [
+   7.7,
+   8.4
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 190,
+  "slug": "angelshark",
+  "name": "Angelshark",
+  "scientific": "Squatina squatina",
+  "group": "Sharks",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   20.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 191,
+  "slug": "electric-ray-torpedo",
+  "name": "Electric Ray (Torpedo)",
+  "scientific": "Torpedo nobiliana",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Temperate",
+  "productivity": "Mesotrophic",
+  "do": [
+   4.5,
+   7.5
+  ],
+  "temp": [
+   10.0,
+   22.0
+  ],
+  "ph": [
+   7.6,
+   8.3
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 192,
+  "slug": "winter-skate",
+  "name": "Winter Skate",
+  "scientific": "Leucoraja ocellata",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   18.0
+  ],
+  "ph": [
+   7.5,
+   8.2
+  ],
+  "chl": [
+   0.4,
+   2.0
+  ]
+ },
+ {
+  "id": 193,
+  "slug": "thorny-skate",
+  "name": "Thorny Skate",
+  "scientific": "Amblyraja radiata",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   6.0,
+   8.5
+  ],
+  "temp": [
+   -1.0,
+   14.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 194,
+  "slug": "barndoor-skate",
+  "name": "Barndoor Skate",
+  "scientific": "Dipturus laevis",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   3.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.3,
+   1.8
+  ]
+ },
+ {
+  "id": 195,
+  "slug": "little-skate",
+  "name": "Little Skate",
+  "scientific": "Leucoraja erinacea",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Mesotrophic",
+  "do": [
+   5.0,
+   8.0
+  ],
+  "temp": [
+   2.0,
+   20.0
+  ],
+  "ph": [
+   7.5,
+   8.3
+  ],
+  "chl": [
+   0.4,
+   2.2
+  ]
+ },
+ {
+  "id": 196,
+  "slug": "chimaera-ratfish",
+  "name": "Chimaera (Ratfish)",
+  "scientific": "Hydrolagus colliei",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   5.0,
+   15.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   1.0
+  ]
+ },
+ {
+  "id": 197,
+  "slug": "rabbitfish",
+  "name": "Rabbitfish",
+  "scientific": "Chimaera monstrosa",
+  "group": "Rays, Skates & Chimaeras",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   5.5,
+   8.0
+  ],
+  "temp": [
+   3.0,
+   12.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.1,
+   0.8
+  ]
+ },
+ {
+  "id": 198,
+  "slug": "lanternfish-myctophid",
+  "name": "Lanternfish (Myctophid)",
+  "scientific": "Myctophum punctatum",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.0,
+   7.0
+  ],
+  "temp": [
+   4.0,
+   18.0
+  ],
+  "ph": [
+   7.6,
+   8.2
+  ],
+  "chl": [
+   0.05,
+   0.8
+  ]
+ },
+ {
+  "id": 199,
+  "slug": "viperfish",
+  "name": "Viperfish",
+  "scientific": "Chauliodus sloani",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Cold-water",
+  "productivity": "Oligotrophic",
+  "do": [
+   4.0,
+   6.5
+  ],
+  "temp": [
+   3.0,
+   12.0
+  ],
+  "ph": [
+   7.6,
+   8.1
+  ],
+  "chl": [
+   0.01,
+   0.3
+  ]
+ },
+ {
+  "id": 200,
+  "slug": "deepsea-anglerfish",
+  "name": "Deepsea Anglerfish",
+  "scientific": "Melanocetus johnsonii",
+  "group": "Deep-sea & Cold Water",
+  "zone": "Polar",
+  "productivity": "Oligotrophic",
+  "do": [
+   3.5,
+   6.5
+  ],
+  "temp": [
+   1.0,
+   8.0
+  ],
+  "ph": [
+   7.5,
+   8.1
+  ],
+  "chl": [
+   0.01,
+   0.2
+  ]
+ }
+]
