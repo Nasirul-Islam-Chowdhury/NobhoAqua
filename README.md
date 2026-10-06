@@ -189,8 +189,7 @@ The full **Software Requirements Specification** (IEEE 830 / ISO/IEC/IEEE 29148 
 | **Md Nasirul Islam Chowdhury** | Software Developer (Full-Stack) — Metropolitan University, Bangladesh |
 | **Joya Roy** | Fisheries Biologist & Marine Ecology Specialist — Sylhet Agricultural University |
 | **Umme Fatema Tarin** | Aquatic Environment Analyst & Eco-Modeling Specialist — Sylhet Agricultural University |
-| **Amit Das** | Graphics Designer & Vocal Art Specialist — Metropolitan University, Bangladesh |
-| **Hamia Hussain** | Environmental Research & Data Analysis Specialist — Metropolitan University, Bangladesh |
+| **Hamia Hussain** | Graphics Designer & Vocal Art Specialist — Metropolitan University, Bangladesh |
 
 <img width="1920" height="1080" alt="Aquaculture (3)" src="https://github.com/user-attachments/assets/bc0fa8ff-1124-48f5-8314-75fb984b3d67" />
 
