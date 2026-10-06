@@ -56,10 +56,10 @@ export function Dashboard() {
             <button onClick={toggle} aria-label="Toggle theme" className="focus-ring grid h-10 w-10 place-items-center rounded-xl border border-line bg-card hover:border-accent">
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            <div className="hidden items-center gap-2 rounded-xl border border-line bg-card py-1.5 pl-1.5 pr-3 sm:flex">
+            <Link href="/profile" className="focus-ring hidden items-center gap-2 rounded-xl border border-line bg-card py-1.5 pl-1.5 pr-3 hover:border-accent sm:flex">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent2 text-sm font-bold text-ink">{user.name.charAt(0).toUpperCase()}</span>
               <span className="max-w-[120px] truncate text-sm">{user.name}</span>
-            </div>
+            </Link>
             <button onClick={async () => { await logOut(); router.replace("/"); }} className="focus-ring inline-flex h-10 items-center gap-2 rounded-xl border border-line px-3 text-sm text-muted transition hover:border-danger hover:text-danger">
               <LogOut size={16} /><span className="hidden sm:inline">Log out</span>
             </button>
@@ -68,7 +68,7 @@ export function Dashboard() {
         <nav role="tablist" aria-label="Dashboard modules" className="flex gap-1 overflow-x-auto border-t border-line px-3 py-2 md:hidden">
           {TABS.map((t) => (
             <button key={t.id} role="tab" aria-selected={tab === t.id} onClick={() => pick(t.id)}
-              className={`focus-ring flex shrink-0 items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium ${tab === t.id ? "bg-accent/15 text-accent" : "text-muted"}`}>
+              className={`focus-ring flex shrink-0 items-center gap-1.5 rounded-lg px-3 py-2.5 text-xs font-medium ${tab === t.id ? "bg-accent/15 text-accent" : "text-muted"}`}>
               <t.icon size={14} />{t.short}
             </button>
           ))}

@@ -11,6 +11,7 @@ export interface JwtPayload {
   sub: string;
   name: string;
   email: string;
+  createdAt: string;
 }
 
 export function signSession(payload: JwtPayload): string {

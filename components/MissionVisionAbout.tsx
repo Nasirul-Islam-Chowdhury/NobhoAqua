@@ -86,7 +86,7 @@ export function MissionVisionAbout() {
         <Reveal>
           <div className="glass mt-5 flex flex-wrap items-center gap-3 rounded-2xl p-5">
             <h3 className="mr-2 text-xs font-semibold uppercase tracking-wider text-accent">Data sources</h3>
-            {sources.map((a) => <span key={a} className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1.5 text-sm text-accent">{a}</span>)}
+            {sources.map((a) => <span key={a} className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1.5 text-xs leading-snug text-accent sm:text-sm">{a}</span>)}
           </div>
         </Reveal>
 

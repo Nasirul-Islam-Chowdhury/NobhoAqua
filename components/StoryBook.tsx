@@ -120,11 +120,11 @@ export function StoryBook() {
       </div>
 
       <div className="mx-auto mt-6 flex max-w-6xl items-center justify-between gap-3">
-        <button onClick={() => go(i - 1)} disabled={i === 0} className="focus-ring inline-flex items-center gap-1.5 rounded-xl border border-line px-4 py-2.5 text-sm font-medium transition enabled:hover:border-accent disabled:opacity-40"><ChevronLeft size={16} />Previous</button>
-        <div className="flex items-center gap-1.5" role="tablist" aria-label="Chapters">
-          {CH.map((x, k) => <button key={x.id} role="tab" aria-selected={k === i} aria-label={`Go to ${x.title}`} onClick={() => go(k)} className={`focus-ring h-2.5 rounded-full transition-all ${k === i ? "w-8 bg-accent" : "w-2.5 bg-line hover:bg-muted"}`} />)}
+        <button onClick={() => go(i - 1)} disabled={i === 0} className="focus-ring inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-line px-3 py-2.5 text-sm font-medium transition enabled:hover:border-accent disabled:opacity-40 sm:px-4"><ChevronLeft size={16} /><span className="hidden sm:inline">Previous</span></button>
+        <div className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-1.5" role="tablist" aria-label="Chapters">
+          {CH.map((x, k) => <button key={x.id} role="tab" aria-selected={k === i} aria-label={`Go to ${x.title}`} onClick={() => go(k)} className={`focus-ring h-2.5 shrink-0 rounded-full transition-all ${k === i ? "w-8 bg-accent" : "w-2.5 bg-line hover:bg-muted"}`} />)}
         </div>
-        <button onClick={() => go(i + 1)} disabled={last} className="focus-ring inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-accent to-accent2 px-4 py-2.5 text-sm font-semibold text-ink transition enabled:hover:brightness-110 disabled:opacity-40">Next<ChevronRight size={16} /></button>
+        <button onClick={() => go(i + 1)} disabled={last} className="focus-ring inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-gradient-to-r from-accent to-accent2 px-3 py-2.5 text-sm font-semibold text-ink transition enabled:hover:brightness-110 disabled:opacity-40 sm:px-4"><span className="hidden sm:inline">Next</span><ChevronRight size={16} /></button>
       </div>
 
       <nav aria-label="Table of contents" className="mx-auto mt-10 grid max-w-6xl gap-2 sm:grid-cols-2 lg:grid-cols-4">

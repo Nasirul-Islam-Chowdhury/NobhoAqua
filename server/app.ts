@@ -37,16 +37,17 @@ router.post("/signup", async (req: Request, res: Response) => {
 
   const passwordHash = await hashPassword(password);
   const trimmedName = name.trim();
+  const createdAt = new Date();
   const result = await users.insertOne({
     name: trimmedName,
     email: normalizedEmail,
     passwordHash,
-    createdAt: new Date(),
+    createdAt,
   });
 
-  const token = signSession({ sub: result.insertedId.toString(), name: trimmedName, email: normalizedEmail });
+  const token = signSession({ sub: result.insertedId.toString(), name: trimmedName, email: normalizedEmail, createdAt: createdAt.toISOString() });
   res.cookie(SESSION_COOKIE, token, cookieOptions());
-  res.status(201).json({ user: { name: trimmedName, email: normalizedEmail } });
+  res.status(201).json({ user: { name: trimmedName, email: normalizedEmail, createdAt: createdAt.toISOString() } });
 });
 
 router.post("/login", async (req: Request, res: Response) => {
@@ -60,9 +61,10 @@ router.post("/login", async (req: Request, res: Response) => {
   if (!user || !(await comparePassword(password, user.passwordHash)))
     return res.status(401).json({ error: "Incorrect email or password." });
 
-  const token = signSession({ sub: user._id.toString(), name: user.name, email: user.email });
+  const createdAt = (user.createdAt instanceof Date ? user.createdAt : new Date(user.createdAt)).toISOString();
+  const token = signSession({ sub: user._id.toString(), name: user.name, email: user.email, createdAt });
   res.cookie(SESSION_COOKIE, token, cookieOptions());
-  res.json({ user: { name: user.name, email: user.email } });
+  res.json({ user: { name: user.name, email: user.email, createdAt } });
 });
 
 router.post("/logout", (_req: Request, res: Response) => {
@@ -74,7 +76,7 @@ router.get("/me", (req: Request, res: Response) => {
   const token = req.cookies?.[SESSION_COOKIE];
   const payload = token ? verifySession(token) : null;
   if (!payload) return res.json({ user: null });
-  res.json({ user: { name: payload.name, email: payload.email } });
+  res.json({ user: { name: payload.name, email: payload.email, createdAt: payload.createdAt } });
 });
 
 app.use("/api/auth", router);
