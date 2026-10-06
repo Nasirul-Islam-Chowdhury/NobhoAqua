@@ -78,7 +78,7 @@ export default function Resources() {
           <div className="mt-7 flex flex-wrap gap-3">
             <Ext href={COLAB} primary>Open our Google Colab</Ext>
             <a href="#datasets" className="focus-ring rounded-xl border border-line px-4 py-2.5 text-sm font-semibold hover:border-accent">Browse datasets</a>
-            <a href="#dataset" className="focus-ring rounded-xl border border-line px-4 py-2.5 text-sm font-semibold hover:border-accent">View our dataset (PDF)</a>
+            <a href="#dataset" className="focus-ring rounded-xl border border-line px-4 py-2.5 text-sm font-semibold hover:border-accent">View our CSV dataset (PDF)</a>
           </div>
         </div>
 
