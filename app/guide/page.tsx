@@ -15,7 +15,7 @@ export default function Guide() {
             <span className="font-display text-lg font-bold">Nobho<span className="text-accent">Aqua</span></span>
           </Link>
           <div className="flex gap-2">
-            <Link href="/dashboard" className="focus-ring rounded-xl border border-line px-4 py-2 text-sm hover:border-accent">Dashboard</Link>
+            <Link href="/dashboard" className="focus-ring hidden rounded-xl border border-line px-4 py-2 text-sm hover:border-accent sm:inline-block">Dashboard</Link>
             <Link href="/signup" className="focus-ring rounded-xl bg-gradient-to-r from-accent to-accent2 px-4 py-2 text-sm font-semibold text-ink">Sign up</Link>
           </div>
         </div>

@@ -36,7 +36,7 @@ const stats = [
 ];
 
 const head = "text-xs font-semibold uppercase tracking-[0.18em] text-accent";
-const link = "focus-ring inline-flex items-center gap-1 rounded text-sm text-muted transition hover:text-fg";
+const link = "focus-ring inline-flex items-center gap-1 rounded py-1.5 text-sm text-muted transition hover:text-fg";
 
 export function Footer() {
   return (
@@ -47,7 +47,7 @@ export function Footer() {
         <div className="glass flex flex-col items-start justify-between gap-5 rounded-3xl p-8 sm:flex-row sm:items-center sm:p-10">
           <div>
             <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Ready to read the ocean from space?</h2>
-            <p className="mt-2 max-w-xl text-muted">Open the dashboard with a free demo account and explore fishing zones, 200 fish species and algal-bloom alerts.</p>
+            <p className="mt-2 max-w-xl text-muted">Open the dashboard with a free account and explore fishing zones, 200 fish species and algal-bloom alerts.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/signup" className="focus-ring group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent2 px-6 py-3 font-semibold text-ink shadow-[0_0_30px_var(--glow)] hover:brightness-110">
@@ -62,7 +62,7 @@ export function Footer() {
           {stats.map((s) => (
             <div key={s.l} className="flex items-center gap-4 rounded-2xl border border-line p-4">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent"><s.icon size={20} /></span>
-              <div><dd className="font-display text-2xl font-bold tabular-nums">{s.v}</dd><dt className="text-xs text-muted">{s.l}</dt></div>
+              <div className="min-w-0"><dd className="break-words font-display text-xl font-bold tabular-nums sm:text-2xl">{s.v}</dd><dt className="text-xs text-muted">{s.l}</dt></div>
             </div>
           ))}
         </dl>
@@ -91,7 +91,7 @@ export function Footer() {
         {/* bottom bar */}
         <div className="mt-14 flex flex-col gap-3 border-t border-line py-7 text-xs text-muted md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} NobhoAqua · Team NobhoJol. Built for the NASA Space Apps Challenge.</p>
-          <p className="max-w-xl md:text-right">Powered by NASA satellite data (Moderate Resolution Imaging Spectroradiometer on Aqua, and Landsat). Estimates support — not replace — local knowledge and fishing regulations. Demo accounts are stored only in your browser.</p>
+          <p className="max-w-xl md:text-right">Powered by NASA satellite data (Moderate Resolution Imaging Spectroradiometer on Aqua, and Landsat). Estimates support — not replace — local knowledge and fishing regulations.</p>
         </div>
       </div>
     </footer>

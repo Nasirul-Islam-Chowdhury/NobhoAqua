@@ -114,7 +114,7 @@ export function FishExplorer() {
                       <h3 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl">{selected.name}</h3>
                       <p className="mt-1 text-base italic text-muted">{selected.scientific} <span className="not-italic">· #{selected.id} of 200</span></p>
                     </div>
-                    <div className="mt-auto grid grid-cols-3 gap-2.5">
+                    <div className="mt-auto grid grid-cols-1 gap-2.5 sm:grid-cols-3">
                       <div className="rounded-xl border border-line p-3">
                         <div className="text-[11px] uppercase tracking-wider text-muted">Best match</div>
                         <div className={`font-display text-2xl font-bold sm:text-3xl ${v.cls}`}>{Math.round(ranked[0].score * 100)}%</div>

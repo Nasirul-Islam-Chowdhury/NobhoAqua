@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 export interface User {
   name: string;
   email: string;
+  createdAt: string;
 }
 
 let cachedUser: User | null | undefined; // undefined = not fetched yet
