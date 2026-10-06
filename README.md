@@ -180,9 +180,8 @@ python3 scripts/extract_points.py
 - Real authentication and saved user locations
 - Bangla language support for fishers
 
-## 📄 Documentation
 
-The full **Software Requirements Specification** (IEEE 830 / ISO/IEC/IEEE 29148 structure) covers functional requirements, interfaces, data model, API, use cases, risks and traceability: see `docs/NobhoAqua_SRS.docx`.
+📂 **[Access the Complete Project Folder on Google Drive](https://drive.google.com/drive/folders/1-sTQeY3pEWwByk4vMmccFnk5u0hMlFqp?usp=sharing)**
 
 ---
 
