@@ -69,7 +69,7 @@ Around the dashboard the site also includes:
 - **Landing page** with an animated underwater hero (layered waves, sunlight rays, swimming fish), Mission, Vision, About, *The Challenge* and *Target Audience*.
 - **Storybook user manual** (`/guide`) — a chapter-by-chapter story that teaches every feature.
 - **Datasets & Resources** (`/resources`) — every NASA/USGS source plus our Google Colab notebook.
-- **Team section**, **demo login / sign-up**, light & dark themes, and a fully responsive, accessible UI (keyboard navigation, ARIA roles, reduced-motion support).
+- **Team section**, real login / sign-up, light & dark themes, and a fully responsive, accessible UI (keyboard navigation, ARIA roles, reduced-motion support).
 
 ## How it works
 
@@ -100,14 +100,18 @@ flowchart LR
 - **Motion:** Framer Motion · **Icons:** lucide-react
 - **Charts:** hand-built SVG (scatter, gauges, box plots, heatmap) — no chart library
 - **Data prep:** Python scripts + Google Colab (scikit-learn, pandas, Plotly)
+- **Auth backend:** Express mounted in a Next.js Route Handler (via `serverless-http`), MongoDB (native driver), JWT sessions in an httpOnly cookie, bcrypt password hashing
 
 ## Getting started
 
-**Requirements:** Node.js 20+ and npm.
+**Requirements:** Node.js 20+, npm, and a MongoDB connection string (e.g. a free [MongoDB Atlas](https://www.mongodb.com/atlas) cluster).
 
 ```bash
 # install
 npm install
+
+# copy the env template and fill in MONGODB_URI / JWT_SECRET
+cp .env.example .env.local
 
 # run the dev server → http://localhost:3000
 npm run dev
@@ -119,13 +123,12 @@ npm run build && npm start
 npm run lint
 ```
 
+On Vercel, add `MONGODB_URI` and `JWT_SECRET` under Project Settings → Environment Variables (for Production, Preview, and Development) before deploying.
+
 ## 🧪 Try it
 
-1. Open the **[live site](https://nobho-aqua.vercel.app/)** and choose **Sign up** (or **Continue with demo account**).
-2. Demo credentials: `demo@nobhojol.app` / `demo1234`.
-3. Explore the three dashboard tabs, then read the **User Manual** at `/guide`.
-
-> ⚠️ **Authentication is a demo.** In the current public release, accounts are stored in your browser's `localStorage` only. There is no server and no real security. Don't use a real password.
+1. Open the **[live site](https://nobho-aqua.vercel.app/)** and choose **Sign up**.
+2. Explore the three dashboard tabs, then read the **User Manual** at `/guide`.
 
 ---
 
@@ -133,15 +136,20 @@ npm run lint
 
 ```text
 app/
-  page.tsx            Landing page
-  dashboard/          Protected dashboard (3 modules)
-  login/ signup/      Demo authentication
-  guide/              Storybook user manual
-  resources/          Datasets & resources page
+  page.tsx                  Landing page
+  dashboard/                Protected dashboard (3 modules)
+  login/ signup/            Authentication pages
+  guide/                    Storybook user manual
+  resources/                Datasets & resources page
+  api/[[...slug]]/route.ts  Bridges requests into the Express app below
 components/           UI sections (Hero, MapSection, FishExplorer, HabMonitor, Team, …)
 lib/
   data.ts             Suitability engine, rankings, helpers
-  auth.ts             Demo auth (localStorage + useSyncExternalStore)
+  auth.ts             Auth client (fetch-based, talks to /api/auth/*)
+  server/             Mongo connection, JWT, password hashing, validation
+server/
+  app.ts              Express app: /api/auth/signup, login, logout, me
+proxy.ts              Redirects unauthenticated requests away from /dashboard
 data/
   points.json         119 Bay of Bengal satellite grid points
   species.json        200 species with tolerance ranges
@@ -177,7 +185,7 @@ python3 scripts/extract_points.py
 - Live NASA data ingestion (GIBS tiles and POWER API) instead of a static dataset
 - Closed-loop **microgravity aquaculture** simulator for space bio-research
 - Per-species seasonal migration and breeding calendars
-- Real authentication and saved user locations
+- Saved user locations
 - Bangla language support for fishers
 
 

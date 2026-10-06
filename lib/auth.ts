@@ -1,61 +1,74 @@
 "use client";
-import { useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 
-// DEMO ONLY: accounts live in this browser's localStorage. There is no server and no real security.
-const USERS = "nj-users";
-const SESSION = "nj-session";
-const SSR = "__ssr__";
-
-export interface User { name: string; email: string }
-interface Stored extends User { password: string }
-
-const listeners = new Set<() => void>();
-const emit = () => listeners.forEach((l) => l());
-
-const read = (k: string) => { try { return localStorage.getItem(k); } catch { return null; } };
-const write = (k: string, v: string | null) => {
-  try {
-    if (v === null) localStorage.removeItem(k);
-    else localStorage.setItem(k, v);
-  } catch {}
-  emit();
-};
-const users = (): Stored[] => { try { return JSON.parse(read(USERS) || "[]"); } catch { return []; } };
-
-export const DEMO = { name: "Demo Fisher", email: "demo@nobhojol.app", password: "demo1234" };
-
-export function signUp(name: string, email: string, password: string): string | null {
-  const e = email.trim().toLowerCase();
-  if (users().some((u) => u.email === e)) return "An account with this email already exists.";
-  write(USERS, JSON.stringify([...users(), { name: name.trim(), email: e, password }]));
-  write(SESSION, JSON.stringify({ name: name.trim(), email: e }));
-  return null;
+export interface User {
+  name: string;
+  email: string;
 }
 
-export function logIn(email: string, password: string): string | null {
-  const e = email.trim().toLowerCase();
-  if (e === DEMO.email && password === DEMO.password) {
-    write(SESSION, JSON.stringify({ name: DEMO.name, email: DEMO.email }));
+let cachedUser: User | null | undefined; // undefined = not fetched yet
+const listeners = new Set<(u: User | null) => void>();
+const emit = (u: User | null) => {
+  cachedUser = u;
+  listeners.forEach((l) => l(u));
+};
+
+async function fetchMe(): Promise<User | null> {
+  try {
+    const res = await fetch("/api/auth/me", { credentials: "include" });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.user ?? null;
+  } catch {
     return null;
   }
-  const u = users().find((x) => x.email === e && x.password === password);
-  if (!u) return "Incorrect email or password.";
-  write(SESSION, JSON.stringify({ name: u.name, email: u.email }));
+}
+
+export function primeAuth() {
+  if (cachedUser === undefined) fetchMe().then(emit);
+}
+
+export async function signUp(name: string, email: string, password: string): Promise<string | null> {
+  const res = await fetch("/api/auth/signup", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ name, email, password }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) return data.error ?? "Something went wrong.";
+  emit(data.user);
   return null;
 }
 
-export const logOut = () => write(SESSION, null);
+export async function logIn(email: string, password: string): Promise<string | null> {
+  const res = await fetch("/api/auth/login", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ email, password }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) return data.error ?? "Something went wrong.";
+  emit(data.user);
+  return null;
+}
 
-const subscribe = (cb: () => void) => {
-  listeners.add(cb);
-  window.addEventListener("storage", cb);
-  return () => { listeners.delete(cb); window.removeEventListener("storage", cb); };
-};
+export async function logOut(): Promise<void> {
+  await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
+  emit(null);
+}
 
 export function useAuth(): { user: User | null; ready: boolean } {
-  const raw = useSyncExternalStore(subscribe, () => read(SESSION) ?? "", () => SSR);
-  if (raw === SSR) return { user: null, ready: false };
-  let user: User | null = null;
-  try { user = raw ? JSON.parse(raw) : null; } catch {}
-  return { user, ready: true };
+  const [user, setUser] = useState<User | null | undefined>(cachedUser);
+
+  useEffect(() => {
+    listeners.add(setUser);
+    primeAuth();
+    return () => {
+      listeners.delete(setUser);
+    };
+  }, []);
+
+  return { user: user ?? null, ready: user !== undefined };
 }

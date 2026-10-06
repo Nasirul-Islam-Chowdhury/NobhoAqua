@@ -60,7 +60,7 @@ export function Dashboard() {
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent2 text-sm font-bold text-ink">{user.name.charAt(0).toUpperCase()}</span>
               <span className="max-w-[120px] truncate text-sm">{user.name}</span>
             </div>
-            <button onClick={() => { logOut(); router.replace("/"); }} className="focus-ring inline-flex h-10 items-center gap-2 rounded-xl border border-line px-3 text-sm text-muted transition hover:border-danger hover:text-danger">
+            <button onClick={async () => { await logOut(); router.replace("/"); }} className="focus-ring inline-flex h-10 items-center gap-2 rounded-xl border border-line px-3 text-sm text-muted transition hover:border-danger hover:text-danger">
               <LogOut size={16} /><span className="hidden sm:inline">Log out</span>
             </button>
           </div>

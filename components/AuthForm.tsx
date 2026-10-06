@@ -1,9 +1,9 @@
 "use client";
-import { Eye, EyeOff, Info } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { DEMO, logIn, signUp, useAuth } from "@/lib/auth";
+import { logIn, signUp, useAuth } from "@/lib/auth";
 
 export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
@@ -15,23 +15,22 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
 
   useEffect(() => { if (ready && user) router.replace("/dashboard"); }, [ready, user, router]);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (signup) {
       if (f.name.trim().length < 2) return setErr("Please enter your name.");
       if (!/^\S+@\S+\.\S+$/.test(f.email)) return setErr("Enter a valid email address.");
       if (f.password.length < 6) return setErr("Password must be at least 6 characters.");
       if (f.password !== f.confirm) return setErr("Passwords don’t match.");
-      const m = signUp(f.name, f.email, f.password);
+      const m = await signUp(f.name, f.email, f.password);
       if (m) return setErr(m);
     } else {
-      const m = logIn(f.email, f.password);
+      const m = await logIn(f.email, f.password);
       if (m) return setErr(m);
     }
     router.replace("/dashboard");
   };
 
-  const demo = () => { logIn(DEMO.email, DEMO.password); router.replace("/dashboard"); };
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement>) => { setF({ ...f, [k]: e.target.value }); setErr(""); };
   const input = "focus-ring w-full rounded-xl border border-line bg-bg/60 px-4 py-3 text-sm placeholder:text-muted";
 
@@ -72,15 +71,11 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
             </button>
           </form>
 
-          <div className="my-5 flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
-          <button onClick={demo} className="focus-ring w-full rounded-xl border border-line px-4 py-3 text-sm font-medium transition hover:border-accent">Continue with demo account</button>
-
           <p className="mt-6 text-center text-sm text-muted">
             {signup ? <>Already have an account? <Link href="/login" className="font-medium text-accent hover:underline">Log in</Link></>
               : <>New here? <Link href="/signup" className="font-medium text-accent hover:underline">Create an account</Link></>}
           </p>
         </div>
-        <p className="mt-5 flex items-start justify-center gap-1.5 text-center text-xs text-muted"><Info size={14} className="mt-0.5 shrink-0" />Demo only: accounts are stored in this browser, not on a server. Don’t use a real password.</p>
       </div>
     </main>
   );
