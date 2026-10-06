@@ -188,7 +188,8 @@ The full **Software Requirements Specification** (IEEE 830 / ISO/IEC/IEEE 29148 
 **NobhoAqua** is our submission for the **NASA International Space Apps Challenge 2026**, developed by **Team NobhoJol** in response to the challenge:
 
 > **Field Shift — Adapting Farms with NASA Data**
-![Uploading Screenshot (15).png…]()
+<img width="1415" height="829" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/d5650018-6013-4910-acd9-23167cede3b6" />
+
 
 The project explores how NASA Earth-observation data can help coastal communities and aquaculture stakeholders adapt to rapidly changing aquatic environments. NobhoAqua transforms satellite-derived ocean observations into practical intelligence for **fisheries, aquaculture, ecosystem monitoring, and space bio-research**.
 
