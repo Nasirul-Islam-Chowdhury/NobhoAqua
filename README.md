@@ -1,7 +1,9 @@
 <div align="center">
 
-<img src="public/logo-mark.png" alt="NobhoAqua logo" width="120" />&nbsp;&nbsp;&nbsp;<img src="<img width="384" height="371" alt="Screenshot (16) n" src="https://github.com/user-attachments/assets/c95896da-70a3-492c-be4b-2076d9e567ba" />
-" alt="NASA Space Apps Challenge 2026" width="120" />
+<img src="public/logo-mark.png" alt="NobhoAqua logo" width="120" height="120" style="object-fit: cover;" />&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/user-attachments/assets/c95896da-70a3-492c-be4b-2076d9e567ba" alt="NASA Space Apps Challenge 2026" width="120" height="120" style="object-fit: cover;" />
+
+</div>
 
 # NobhoAqua
 
