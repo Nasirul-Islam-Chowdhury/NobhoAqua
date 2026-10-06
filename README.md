@@ -181,18 +181,34 @@ python3 scripts/extract_points.py
 
 The full **Software Requirements Specification** (IEEE 830 / ISO/IEC/IEEE 29148 structure) covers functional requirements, interfaces, data model, API, use cases, risks and traceability: see `docs/NobhoAqua_SRS.docx`.
 
+---
+
+## 🛰️ NASA Space Apps Challenge 2026
+
+**NobhoAqua** is our submission for the **NASA International Space Apps Challenge 2026**, developed by **Team NobhoJol** in response to the challenge:
+
+> **Field Shift — Adapting Farms with NASA Data**
+![Uploading Screenshot (15).png…]()
+
+The project explores how NASA Earth-observation data can help coastal communities and aquaculture stakeholders adapt to rapidly changing aquatic environments. NobhoAqua transforms satellite-derived ocean observations into practical intelligence for **fisheries, aquaculture, ecosystem monitoring, and space bio-research**.
+
+By combining NASA satellite observations with machine learning, species habitat information, and interactive geospatial visualization, NobhoAqua aims to bridge the gap between **raw Earth-observation data and real-world aquatic decision-making**.
+
 ## Team NobhoJol
 
 | | Role |
 |---|---|
 | **Pritom Paul** | Lead Researcher, Data Visualization Specialist & System Architect (Team Lead) — Metropolitan University, Bangladesh |
-| **Md Nasirul Islam Chowdhury** | Software Developer (Full-Stack) — Metropolitan University, Bangladesh |
+| **Md Nasirul Islam Chowdhury** | Software Developer (Full-Stack) & Data Analysis Specialist — Metropolitan University, Bangladesh |
 | **Joya Roy** | Fisheries Biologist & Marine Ecology Specialist — Sylhet Agricultural University |
 | **Umme Fatema Tarin** | Aquatic Environment Analyst & Eco-Modeling Specialist — Sylhet Agricultural University |
 | **Hamia Hussain** | Graphics Designer & Vocal Art Specialist — Metropolitan University, Bangladesh |
 
-<img width="1920" height="1080" alt="Aquaculture (3)" src="https://github.com/user-attachments/assets/bc0fa8ff-1124-48f5-8314-75fb984b3d67" />
+<img width="1920" height="1080" alt="Aquaculture (5)" src="https://github.com/user-attachments/assets/0850d760-1a28-42fb-8223-c176e5173300" />
 
+## Mission
+
+*Our mission at Team NobhoJol is to empower coastal fisheries and space bio-research through the NobhoAqua Portal by seamlessly transforming raw satellite data into actionable marine intelligence. By leveraging NASA MODIS-Aqua for Sea Surface Temperature (SST) and Chlorophyll-a concentrations, Landsat 8/9 for high-resolution thermal and optical coastal mapping via USGS EarthExplorer & GIBS, and the NASA POWER API for real-time agroclimatic ocean analytics, we optimize fishing zone predictions (PFZ) to reduce fuel waste on Earth, while providing data-driven modeling for closed-loop microgravity aquaculture in space.*
 
 ## Vision
 
@@ -200,6 +216,8 @@ The full **Software Requirements Specification** (IEEE 830 / ISO/IEC/IEEE 29148 
 
 <div align="center">
 
-Made with 🌊 for the NASA Space Apps Challenge · Supporting **UN SDG 14 — Life Below Water**
+Made with 🌊 for the NASA Space Apps Challenge · Supporting **UN SDGs**
+<img width="1920" height="1080" alt="Aquaculture (6)" src="https://github.com/user-attachments/assets/ea7adcd9-25d5-405e-9222-2c1c1b106c76" />
+
 
 </div>                      
