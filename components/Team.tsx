@@ -9,7 +9,6 @@ const MEMBERS: { name: string; img: string | null; role: string; uni: string }[]
   { name: "Md Nasirul Islam Chowdhury", img: "/team/md-nasirul-islam-chowdhury-new.jpg", role: "Software Developer (Full-Stack)", uni: METRO },
   { name: "Joya Roy", img: "/team/joya-roy.jpg", role: "Fisheries Biologist & Marine Ecology Specialist", uni: SAU },
   { name: "Umme Fatema Tarin", img: "/team/umme-fatema-tarin.jpg", role: "Aquatic Environment Analyst & Eco-Modeling Specialist", uni: SAU },
-  { name: "Amit Das", img: "/team/amit-das.jpg", role: "Graphics Designer & Vocal Art Specialist", uni: METRO },
   { name: "Hamia Hussain", img: "/team/hamia-hussain.jpg", role: "Environmental Research & Data Analysis Specialist", uni: METRO },
 ];
 
